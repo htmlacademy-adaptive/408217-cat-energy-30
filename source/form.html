@@ -37,10 +37,10 @@
         <p class="">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       </div>
 
-      <form class="main-container__form" action="https://echo.htmlacademy.ru/" method="post">
-      <div class="cat-data-purposes">
-        <fieldset class="form-cat-data">
-          <legend class="cat-data-title visually-hidden">Данные кота</legend>
+      <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+      <div class="form__cat-data-purposes">
+        <fieldset class="form__fieldset">
+          <legend class="form__legend-title visually-hidden">Данные кота</legend>
         <div class="form-group">
           <label for="name" class="field-name">Имя*</label>
           <input type="text" id="name" name="name" value="Барсик" required>
@@ -54,8 +54,8 @@
           <input type="number" id="age" name="age" value="7" required>
         </div>
       </fieldset>
-      <fieldset class="form-cat-purposes">
-        <legend class="cat-data-title visually-hidden">Цели</legend>
+      <fieldset class="form__cat-purposes">
+        <legend class="form__legend-title visually-hidden">Цели</legend>
       <div class="form-group">
         <input type="radio" id="lose-weight" name="lose-weight" value="Похудение" checked="checked">
         <label for="lose-weight" class="">Похудение</label>
@@ -71,8 +71,8 @@
       </fieldset>
       </div>
 
-      <fieldset class="form-contacts">
-        <legend class="form-contacts-title">Контактные данные (владельца кота)</legend>
+      <fieldset class="form__fieldset-contacts">
+        <legend class="form__legend-contacts-title">Контактные данные (владельца кота)</legend>
         <div class="form-group">
           <label for="email" class="field-name">E-mail*</label>
           <input type="email" id="email" name="email" value="кuklachev@gmail.com" required>
@@ -83,13 +83,13 @@
         </div>
       </fieldset>
 
-      <fieldset class="form-comment">
-        <legend class="form-comment-title">Комментарий</legend>
+      <fieldset class="form__fieldset-comment">
+        <legend class="form__fieldset-comment-title">Комментарий</legend>
         <textarea name="form-comment" id="form-comment" cols="10" rows="5"></textarea>
       </fieldset>
 
-      <fieldset class="form-addition">
-        <legend class="form-addition-title">Дополнительно</legend>
+      <fieldset class="form__fieldset-addition">
+        <legend class="form__legend-addition-title">Дополнительно</legend>
         <div class="form-group">
           <input type="checkbox" id="addition" name="addition" value="Сахарозаменитель" checked="checked">
           <label for="addition" class="">Сахарозаменитель</label>
@@ -107,8 +107,8 @@
           <label for="vitamins" class="">Витамины</label>
         </div>
       </fieldset>
-        <button class="form-button" type="submit" aria-label="Отправить заявку">Отправить заявку</button>
-        <p class="form-button-info">* — Обязательные поля</p>
+        <button class="form__button" type="submit" aria-label="Отправить заявку">Отправить заявку</button>
+        <p class="form__button-info">* — Обязательные поля</p>
       </form>
     </main>
 
