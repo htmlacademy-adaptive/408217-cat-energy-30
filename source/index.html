@@ -5,13 +5,23 @@
     <title>Кэт энерджи</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page__body">
     <header class="main-header">
       <a class="main-header__logotype" href="#">
-        <img src="images/logo-mobile.svg" width="33" height="38" alt="Кэт энерджи.">
-        <img src="images/logotype.svg" width="101" height="18" alt="Кэт энерджи.">
+        <picture>
+          <source type="type="image/svg+xml" media="(min-width: 1400px)" srcset="images/icons/logo.svg">
+          <source type="type="image/svg+xml" media="(min-width: 768px)" srcset="images/icons/logo-pic.svg">
+          <img src="images/icons/logo-mobile.svg" width="33" height="38" alt="Кэт энерджи.">
+        </picture>
+        <picture>
+          <img src="images/icons/logotype.svg" width="101" height="18" alt="Кэт энерджи.">
+        </picture>
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -108,6 +118,7 @@
             <p class="welcome__title">Приглашаем к сотрудничеству дилеров!</p>
             <p class="welcome__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
             <img class="welcome__map" src="images/map.png" width="320" height="362" alt="Как проехать">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa88e3c8ee34bbc74e85f70c7eb30a5b0a643686cc8f80dc9a7617f42eb5e33e6&amp;source=constructor" width="100%" height="362" frameborder="0"></iframe>
           </div>
         </section>
         <div class="footer__wrapper">
