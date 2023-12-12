@@ -48,7 +48,11 @@
         <div class="promo__wrapper">
             <h2 class="promo__title">Функциональное питание для котов</h2>
             <p class="promo__description">Занялся собой? Займись котом!</p>
-            <img class="promo__img" src="images/index-can-mobile.png" width="280" height="270" alt="Функциональное питание для котов.">
+            <picture>
+              <source type="image/png" media="(min-width: 1400px)" srcset="images/index-can-tablet@1x.png 1x, images/index-can-tablet@2x.png 2x" width="709" height="609">
+              <source type="image/png" media="(min-width: 768px)" srcset="images/index-can-tablet@1x.png, images/index-can-tablet@2x.png 2x" width="552" height="499">
+              <img class="promo__img" src="images/index-can-mobile@1x.png" srcset="images/index-can-mobile@2x.png 2x" width="280" height="270" alt="Функциональное питание для котов.">
+            </picture>
             <a class="promo__link" href="form.html">Подобрать программу</a>
         </div>
       </section>
@@ -101,10 +105,18 @@
             </ul>
             <div class="slideshow">
               <div class="slideshow__slide slideshow__slide--cat-min">
-                <img src="images/cat-min.png" alt="Худой кот." width="280" height="256">
+                <picture>
+                  <source media="(min-width: 1400px)" srcset="images/cat-min-tablet@1x.png 1x, images/cat-min-tablet@2x.png 2x" width="560" height="512">
+                  <source media="(min-width: 768px)" srcset="images/cat-min-tablet@1x.png 1x, images/cat-min-tablet@2x.png 2x" width="560" height="512">
+                  <img class="slideshow__image" src="images/cat-min-mobile@1x.png" srcset="images/cat-min-mobile@2x.png 2x" width="280" height="256" alt="Худой кот.">
+                </picture>
               </div>
               <div class="slideshow__slide slideshow__slide--cat-max">
-                <img src="images/cat-max.png" alt="Толстый кот." width="280" height="256">
+                <picture>
+                  <source media="(min-width: 1400px)" srcset="images/cat-max-tablet@1x.png 1x, images/cat-max-tablet@2x.png 2x" width="560" height="512">
+                  <source media="(min-width: 768px)" srcset="images/cat-max-tablet@1x.png 1x, images/cat-max-tablet@2x.png 2x" width="560" height="512">
+                  <img class="slideshow__image" src="images/cat-max-mobile@1x.png" srcset="images/cat-max-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот.">
+                </picture>
               </div>
               <button class="example__button button" type="button"><span class="visually-hidden">Слайдер</span></button>
             </div>
@@ -117,7 +129,7 @@
           <div class="welcome__wrapper">
             <p class="welcome__title">Приглашаем к сотрудничеству дилеров!</p>
             <p class="welcome__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-            <img class="welcome__map" src="images/map.png" width="320" height="362" alt="Как проехать">
+            <img class="welcome__map" src="images/map-mobile@1x.png" width="320" height="362" alt="Как проехать">
           </div>
         </section>
         <div class="footer__wrapper">
