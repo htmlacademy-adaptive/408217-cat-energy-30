@@ -1,0 +1,11 @@
+.catalog {
+
+}
+
+.catalog__title {
+  line-height: 36px;
+}
+
+.catalog__list {
+  @include list;
+}
