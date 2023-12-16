@@ -5,17 +5,30 @@
     url("/images/index-background-desktop-2@2x.png") type("image/png") 2x
     );
   background-repeat: no-repeat;
+  background-color: #68b738;
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
 }
 
-.__title {
+.promo__title {
   font-size: 36px;
   line-height: 36px;
 }
 
-.__description {
+.promo__description {
   font-size: 14px;
   line-height: 14px;
+}
+
+.promo__link {
+  @include underline;
+  color: #ffffff;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding: 10px 44px;
 }

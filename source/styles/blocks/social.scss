@@ -1,0 +1,7 @@
+.social {
+  display: block;
+}
+
+.social__item {
+  @include list;
+}
