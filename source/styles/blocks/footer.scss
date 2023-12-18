@@ -1,3 +1,15 @@
 .footer {
   display: block;
 }
+
+.footer__academy-logo {
+  text-decoration: none;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus path {
+    fill: #68b738;
+  }
+}

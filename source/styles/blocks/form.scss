@@ -1,10 +1,21 @@
-.form,
-.form__control {
-  color: #444444;
+.form {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+}
+
+.form__control {
+  &:invalid {
+    border: 2px solid #ff8282;
+  }
+}
+
+.form__legend {
+  color: #000000;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 26px;
 }
 
 .form__control--textarea {

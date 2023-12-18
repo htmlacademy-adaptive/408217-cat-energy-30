@@ -5,3 +5,13 @@
 .social__item {
   @include list;
 }
+
+.social__link {
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus path {
+    fill: #68b738;
+  }
+}

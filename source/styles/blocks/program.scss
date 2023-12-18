@@ -17,6 +17,10 @@
   line-height: 16px;
   text-transform: uppercase;
   text-decoration: none;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .program__cat {

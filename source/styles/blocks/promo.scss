@@ -5,11 +5,21 @@
     url("/images/index-background-desktop-2@2x.png") type("image/png") 2x
     );
   background-repeat: no-repeat;
-  background-color: #68b738;
+  background-color: #4f4e53;
   background-position: center top;
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    border: 1px solid #000000;
+    background: rgba(104, 183, 56, 0.85);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    width: 320px;
+    height: 302px;
+  }
 }
 
 .promo__title {
@@ -27,6 +37,7 @@
 .promo__link {
   color: #ffffff;
   font-family: "Oswald", sans-serif;
+  width: 280px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
