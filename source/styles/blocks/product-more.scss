@@ -1,26 +1,26 @@
-.catalog-card {
-  align-items: center;
-}
-
-.catalog-card__title {
-  color: #222222;
+.product-more__title {
+  color: #111111;
+  text-align: center;
   font-family: "Oswald", sans-serif;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 20px;
   text-transform: uppercase;
 }
 
-.catalog-card__product-specifications {
-  @include list;
+.product-more__description {
+  color: #444444;
+  text-align: center;
+  font-family: "Lato", sans-serif;
   font-size: 12px;
   line-height: 16px;
 }
 
-.catalog-card__button {
+.product-more__button {
   display: block;
+  background: #f2f2f2;
   width: 280px;
   padding: 10px 0;
-  color: #ffffff;
+  color: #444444;
   text-align: center;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
