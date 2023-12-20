@@ -1,0 +1,36 @@
+.card-addit__list {
+  @include list;
+}
+
+.card-addit__title {
+  font-family: "Oswald", sans-serif;
+  color: #000000;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.card-addit__name {
+  color: #222222;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.card-addit__card-button {
+  text-decoration: none;
+  display: block;
+  width: 280px;
+  padding: 10px 0;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.card-addit__price,
+.card-addit__size {
+  line-height: 14px;
+}

@@ -1,0 +1,46 @@
+.form {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form__control {
+  &:invalid {
+    border: 2px solid #ff8282;
+  }
+}
+
+.form__legend {
+  color: #000000;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.form__control--textarea {
+  width: 100%;
+}
+
+.form__cat-data-purposes {
+  display: flex;
+}
+
+.form__button {
+  width: 280px;
+  height: 40px;
+  padding: 10px 44px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.form__button-info {
+  color: #000000;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: none;
+}
