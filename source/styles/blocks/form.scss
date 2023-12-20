@@ -22,6 +22,14 @@
   width: 100%;
 }
 
+.form__control--icon-email {
+  display: inline-block;
+  background-image: url("../../images/icons/stack.svg#email-form.svg");
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  background-position: calc(100% - 19px) center;
+}
+
 .form__cat-data-purposes {
   display: flex;
 }

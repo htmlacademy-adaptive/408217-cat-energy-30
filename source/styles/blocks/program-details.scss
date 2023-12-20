@@ -4,3 +4,27 @@
   font-size: 36px;
   line-height: 40px;
 }
+
+.program-details__list {
+  @include list;
+}
+
+.program-details__text--leaf {
+  background-color: #68B738;
+  padding: 14px 15px;
+}
+
+.program-details__text--instant {
+  background-color: #68B738;
+  padding: 14px 15px;
+}
+
+.program-details__text--eat {
+  background-color: #68B738;
+  padding: 14px 15px;
+}
+
+.program-details__text--watch {
+  background-color: #68B738;
+  padding: 14px 15px;
+}
