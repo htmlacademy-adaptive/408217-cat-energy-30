@@ -1,23 +1,22 @@
 .gift {
   background-image:
-    image-set(
+  linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set(
       url("/images/backpack-mobile@1x.png") type("image/png") 1x,
       url("/images/backpack-mobile@2x.png") type("image/png") 2x
     );
   min-width: 280px;
   min-height: 290px;
+  position: relative;
   background-repeat: no-repeat;
   background-position: center;
   background-color: #4f4e53;
 
   &::before {
-    content: "";
+    content: url(../../images/icons/icon-gift.svg#icon-gift);
     position: absolute;
-    border: 1px solid #000000;
-    background-color: rgba(104, 183, 56, 0.85);
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    min-width: 280px;
-    min-height: 290px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 56px;
   }
 }
 
@@ -25,4 +24,6 @@
   color: #ffffff;
   font-size: 16px;
   line-height: 20px;
+  text-align: center;
+  padding: 187px 60px 43px;
 }

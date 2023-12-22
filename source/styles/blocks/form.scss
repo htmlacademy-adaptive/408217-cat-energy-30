@@ -6,6 +6,7 @@
 }
 
 .form__control {
+
   &:invalid {
     border: 2px solid #ff8282;
   }
@@ -24,10 +25,16 @@
 
 .form__control--icon-email {
   display: inline-block;
-  background-image: url("../../images/icons/stack.svg#email-form.svg");
+  background-image: url("/images/icons/stack.svg#icon-email-form");
   background-repeat: no-repeat;
   background-color: #ffffff;
-  background-position: calc(100% - 19px) center;
+}
+
+.form__control--icon-phone {
+  display: inline-block;
+  background-image: url("/images/icons/stack.svg#icon-phone-form");
+  background-repeat: no-repeat;
+  background-color: #ffffff;
 }
 
 .form__cat-data-purposes {
@@ -42,7 +49,6 @@
   text-align: center;
   font-size: 16px;
   line-height: 20px;
-  text-transform: uppercase;
 }
 
 .form__button-info {
