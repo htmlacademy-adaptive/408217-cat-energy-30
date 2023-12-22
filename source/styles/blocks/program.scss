@@ -24,16 +24,6 @@
   }
 }
 
-.program__link--arrow1 {
-  display: block;
-
-    &:hover {
-  -webkit-transform: translate(0, 10px);
-  -ms-transform: translate(0 10px);
-  transform: translate(0 10px);
-  }
-}
-
 .program__link--arrow {
   background: url("/images/icons/stack.svg#icon-arrow");
   position: absolute;
