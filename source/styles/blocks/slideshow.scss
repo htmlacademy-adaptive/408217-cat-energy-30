@@ -5,11 +5,9 @@
 
 .slideshow__arrow {
   background: url("/images/icons/two-arrows.svg#two-arrows");
-    background-color: rgba(0, 0, 0, 0);
-    background-repeat: repeat;
-  position: absolute;
   background-color: transparent;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
+  position: absolute;
   width: 24px;
   height: 18px;
 }

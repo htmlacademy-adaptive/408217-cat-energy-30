@@ -1,8 +1,9 @@
 .gift {
   background-image:
-  linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set(
-      url("/images/backpack-mobile@1x.png") type("image/png") 1x,
-      url("/images/backpack-mobile@2x.png") type("image/png") 2x
+    linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+    image-set(
+    url("/images/backpack-mobile@1x.png") type("image/png") 1x,
+    url("/images/backpack-mobile@2x.png") type("image/png") 2x
     );
   min-width: 280px;
   min-height: 290px;
@@ -12,7 +13,7 @@
   background-color: #4f4e53;
 
   &::before {
-    content: url(../../images/icons/icon-gift.svg#icon-gift);
+    content: url("/images/icons/icon-gift.svg#icon-gift");
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
