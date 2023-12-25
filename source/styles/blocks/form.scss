@@ -5,8 +5,12 @@
   text-transform: uppercase;
 }
 
+.form__fieldset {
+  border: 0;
+}
+
 .form__control {
-  &:invalid {
+  &:focus {
     border: 2px solid #ff8282;
   }
 }
@@ -22,11 +26,32 @@
   width: 100%;
 }
 
-.form__cat-data-purposes {
-  display: flex;
+.form__control--icon-email {
+  display: inline-block;
+  background-image: url("/images/icons/icon-email-form.svg");
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  background-position: right;
+
+  &:focus {
+    fill: #68b738;
+  }
 }
 
+.form__control--icon-phone {
+  display: inline-block;
+  background-image: url("/images/icons/icon-phone-form.svg");
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  background-position: right;
+}
+
+/*.form__cat-data-purposes {
+  display: flex;
+}*/
+
 .form__button {
+  font-family: "Oswald", sans-serif;
   width: 280px;
   height: 40px;
   padding: 10px 44px;
@@ -34,7 +59,7 @@
   text-align: center;
   font-size: 16px;
   line-height: 20px;
-  text-transform: uppercase;
+  cursor: pointer;
 }
 
 .form__button-info {

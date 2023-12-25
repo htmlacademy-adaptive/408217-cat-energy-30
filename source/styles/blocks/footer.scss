@@ -4,12 +4,29 @@
 
 .footer__academy-logo {
   text-decoration: none;
+  color: #444444;
 
   &:active {
     opacity: 0.3;
   }
+}
 
-  &:focus path {
+.footer__academy-logo--icon {
+  fill: #444444;
+
+  &:hover {
     fill: #68b738;
+  }
+}
+
+.footer__logotype {
+  display: inline-block;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }

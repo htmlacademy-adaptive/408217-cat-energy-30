@@ -1,8 +1,9 @@
 .promo {
   background-image:
+    linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
     image-set(
-    url("/images/index-background-desktop-2@1x.png") type("image/png") 1x,
-    url("/images/index-background-desktop-2@2x.png") type("image/png") 2x
+    url("../../images/index-background-desktop-2@1x.png") type("image/png") 1x,
+    url("../../images/index-background-desktop-2@2x.png") type("image/png") 2x
     );
   background-repeat: no-repeat;
   background-color: #4f4e53;
@@ -10,28 +11,24 @@
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
-
-  &::before {
-    content: "";
-    position: absolute;
-    border: 1px solid #000000;
-    background: rgba(104, 183, 56, 0.85);
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    width: 320px;
-    height: 302px;
-  }
 }
 
 .promo__title {
   font-family: "Oswald", sans-serif;
   font-size: 36px;
   line-height: 36px;
+  padding: 27px 35px 0 36px;
+  font-weight: 400;
 }
 
 .promo__description {
   font-family: "Oswald", sans-serif;
   font-size: 14px;
   line-height: 14px;
+}
+
+.promo__img {
+  padding-top: 29px;
 }
 
 .promo__link {

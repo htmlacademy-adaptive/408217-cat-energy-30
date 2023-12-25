@@ -6,12 +6,17 @@
   @include list;
 }
 
-.social__link {
-  &:active {
-    opacity: 0.3;
+.social__link--youtube,
+.social__link--vk,
+.social__link--telegram {
+  fill: #666666;
+
+  &:hover {
+    fill: #68b738;
   }
 
-  &:focus path {
-    fill: #68b738;
+  &:active {
+    fill: #444444;
+    opacity: 0.3;
   }
 }
