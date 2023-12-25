@@ -6,10 +6,12 @@
   @include list;
 }
 
-.social__link {
+.social__link--youtube,
+.social__link--vk,
+.social__link--telegram {
   fill: #666666;
 
-  &:hover path {
+  &:hover {
     fill: #68b738;
   }
 

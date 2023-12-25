@@ -12,7 +12,9 @@
 }
 
 .footer__academy-logo--icon {
-  &:hover path {
+  fill: #444444;
+
+  &:hover {
     fill: #68b738;
   }
 }

@@ -1,6 +1,8 @@
 .slideshow {
   display: block;
   position: relative;
+  width: 280px;
+  height: 256px;
 }
 
 .slideshow__arrow {
@@ -10,4 +12,23 @@
   position: absolute;
   width: 24px;
   height: 18px;
+  display: block;
+  bottom: 50%;
+  left: 48%;
+}
+
+.slideshow__slide--cat-max {
+  display: block;
+  position: relative;
+}
+
+.slideshow__slide--cat-min {
+  display: block;
+  position: absolute;
+}
+
+.example__button {
+  bottom: 50%;
+  left: 50%;
+  background: transparent;
 }
