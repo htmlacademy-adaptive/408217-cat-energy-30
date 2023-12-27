@@ -1,5 +1,30 @@
+.program {
+  display: block;
+}
+
+.program__wrapper {
+  @include base-wrapper;
+  padding: 20px;
+
+  @media (min-width: $width-desktop) {
+    padding: 70px 110px 0;
+  }
+}
+
 .program__list {
   @include list;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 290px;
+
+  @media (min-width: $width-tablet) and (max-width: $width-desktop) {
+    flex-direction: column;
+  }
+
+  @media (min-width: $width-desktop) {
+    flex-direction: row;
+  }
 }
 
 .program__title {
@@ -29,16 +54,27 @@
   background: url("../../images/icons/stack.svg#icon-arrow");
   position: absolute;
   padding-right: 160px;
-  transition: transform 0.3s ease;
-
-  &:hover {
-    transform: scale(1.2);
-  }
 }
 
 .program__card {
   background: #f2f2f2;
-  padding: 20px 0;
+  padding: 20px;
+  position: relative;
+
+  &::before {
+    content: "";
+    background: #d9d9d9;
+    height: 1px;
+    min-width: 260px;
+    position: absolute;
+    bottom: 10%;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 570px;
+    height: 374px;
+    gap: 80px;
+  }
 }
 
 .program__cat-slim {

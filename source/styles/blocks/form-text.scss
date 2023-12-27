@@ -1,3 +1,7 @@
+.form-text {
+  @include base-wrapper;
+}
+
 .form-text__description {
   color: #000000;
   font-family: "Oswald", sans-serif;

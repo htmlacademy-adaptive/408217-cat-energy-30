@@ -1,16 +1,18 @@
+.welcome {
+  background-color: #ffffff;
+}
+
+.welcome__wrapper {
+  padding: 26px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .welcome__title {
   color: #111111;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-}
-
-.welcome__map {
-  background-image: url("/images/map@2x.png");
-  margin: auto;
-  background-color: #ffffff;
-  background-position: 0 0;
-  background-repeat: repeat;
-  max-width: 1440px;
 }

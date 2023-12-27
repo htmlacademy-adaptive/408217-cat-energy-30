@@ -11,6 +11,12 @@
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
+  background-size: auto 302px;
+}
+
+.promo__wrapper {
+  @include base-wrapper;
+  padding: 0;
 }
 
 .promo__title {
@@ -25,6 +31,7 @@
   font-family: "Oswald", sans-serif;
   font-size: 14px;
   line-height: 14px;
+  margin: 0;
 }
 
 .promo__img {
@@ -34,10 +41,15 @@
 .promo__link {
   color: #ffffff;
   font-family: "Oswald", sans-serif;
-  width: 280px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  padding: 10px 44px;
   text-decoration: none;
+  display: flex;
+  width: 280px;
+  padding: 10px 44px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  margin: auto;
 }

@@ -1,1 +1,20 @@
 $base-color-text: #444444;
+
+$width-mobile: 320px;
+$width-tablet: 768px;
+$width-desktop: 1200px;
+
+$width-mobile-padding: 20px;
+$width-tablet-padding: 30px;
+$width-tablet-padding-inner: 40px;
+$width-desktop-padding: 110px;
+
+$width-mobile-content: (
+  $width-mobile - 2 * $width-mobile-padding
+);
+$width-tablet-content: (
+  $width-tablet - 2 * $width-tablet-padding
+);
+$width-desktop-content: (
+  $width-desktop - 2 * $width-desktop-padding
+);

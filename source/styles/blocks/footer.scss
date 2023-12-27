@@ -1,5 +1,22 @@
 .footer {
   display: block;
+  background: #f2f2f2;
+}
+
+.footer__wrapper {
+  @include base-wrapper;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 20px;
+
+  @media (max-width: $width-tablet) {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.footer__academy {
+  display: flex;
 }
 
 .footer__academy-logo {
@@ -13,6 +30,9 @@
 
 .footer__academy-logo--icon {
   fill: #444444;
+  gap: 23px;
+  display: flex;
+  align-items: center;
 
   &:hover {
     fill: #68b738;
@@ -20,7 +40,8 @@
 }
 
 .footer__logotype {
-  display: inline-block;
+  display: flex;
+  align-items: center;
 
   &:hover {
     opacity: 0.8;

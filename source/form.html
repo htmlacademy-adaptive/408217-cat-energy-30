@@ -13,18 +13,22 @@
   </head>
   <body class="page__body">
     <header class="main-header">
+      <div class="main-header__logo">
       <a class="main-header__logotype" href="index.html">
         <picture>
-          <source type="image/svg+xml" media="(min-width: 1400px)" srcset="images/icons/logo.svg">
-          <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/icons/logo-pic.svg">
-          <img src="images/icons/logo-mobile.svg" width="33" height="38" alt="Кэт энерджи.">
+          <source type="image/svg+xml" media="(min-width: 1200px)" srcset="../../images/icons/logo.svg">
+          <source type="image/svg+xml" media="(min-width: 768px)" srcset="../../images/icons/logo-pic.svg">
+          <img src="../../images/icons/logo-mobile.svg" width="33" height="38" alt="Кэт энерджи.">
         </picture>
         <svg width="101" height="18">
           <use href="images/icons/stack.svg#logotype" x="0" y="0"></use>
         </svg>
       </a>
+        <input class="main-header__burger-checkbox" type="checkbox" id="burger-checkbox" name="burger-checkbox">
+        <label class="main-header__burger" for="burger-checkbox"></label>
+      </div>
+      </header>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
               <li class="main-nav__item">
@@ -83,7 +87,7 @@
 
       <fieldset class="form__fieldset">
         <legend class="form__legend">
-          <span class="form__legend form__legend--title">Контактные данные (владельца кота)</span>npm
+          <span class="form__legend form__legend--title">Контактные данные (владельца кота)</span>
         </legend>
         <div class="form__group">
           <label class="form__label" for="email">E-mail*</label>
@@ -130,8 +134,12 @@
         <div class="welcome__wrapper">
           <p class="welcome__title">Приглашаем к сотрудничеству дилеров!</p>
           <p class="welcome__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-          <img class="welcome__map" src="images/map-mobile@1x.png" width="320" height="362" alt="Как проехать">
         </div>
+        <picture>
+          <source type="image/png" media="(min-width: 1200px)" srcset="images/map@1x.png 1x, images/map@2x.png 2x" max-width="100%" height="auto">
+          <source type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png, images/map-tablet@2x.png 2x" max-width="100%" height="auto">
+          <img class="welcome__map" src="images/map-mobile@1x.png" max-width="100%" height="auto" alt="Как проехать.">
+        </picture>
       </section>
       <div class="footer__wrapper">
         <a class="footer__logotype" href="index.html">

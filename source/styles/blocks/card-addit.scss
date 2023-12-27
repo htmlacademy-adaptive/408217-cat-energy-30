@@ -1,3 +1,7 @@
+.card-addit {
+  @include base-wrapper;
+}
+
 .card-addit__list {
   @include list;
 }
