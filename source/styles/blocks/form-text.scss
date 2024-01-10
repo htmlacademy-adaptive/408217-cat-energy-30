@@ -1,7 +1,14 @@
+.form-text {
+  @include base-wrapper;
+  max-width: 1220px;
+}
+
 .form-text__description {
   color: #000000;
   font-family: "Oswald", sans-serif;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  padding: 14px 0 22px 0;
+  width: 226px;
 }

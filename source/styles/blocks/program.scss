@@ -1,14 +1,67 @@
+.program {
+  display: block;
+}
+
+.program__wrapper {
+  @include base-wrapper;
+  padding: 20px;
+  max-width: 1220px;
+}
+
 .program__list {
   @include list;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (min-width: $width-tablet) {
+    flex-direction: column;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 1220px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px 80px;
+  }
 }
 
 .program__title {
   color: #000000;
   font-family: "Oswald", sans-serif;
   font-size: 24px;
-  line-height: 37px;
   text-transform: uppercase;
   font-weight: 400;
+
+  @media (min-width: $width-tablet) {
+    grid-column: 1/2;
+    font-size: 36px;
+    line-height: 1;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-left: 162px;
+    margin-bottom: 73px;
+  }
+}
+
+.program__description {
+  padding-bottom: 0;
+
+  @media (min-width: $width-tablet) {
+    grid-column: 1/2;
+    padding-bottom: 52px;
+    border-bottom: none;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    width: 316px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-bottom: 23px;
+  }
 }
 
 .program__link {
@@ -20,25 +73,76 @@
   text-decoration: none;
   position: relative;
 
+  @media (min-width: $width-tablet) {
+    grid-column: 1/2;
+    width: fit-content;
+    padding-right: 57px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-right: 60px;
+  }
+
   &:active {
     opacity: 0.3;
   }
 }
 
 .program__link--arrow {
-  background: url("../../images/icons/stack.svg#icon-arrow");
-  position: absolute;
-  padding-right: 160px;
-  transition: transform 0.3s ease;
+  &::after {
+    content: "";
+    width: 32px;
+    height: 10px;
+    background: url("../../images/icons/stack.svg#icon-arrow");
+    background-repeat: no-repeat;
+    background-size: 32px 10px;
+    background-position: -8px;
+    overflow: hidden;
+    position: absolute;
+    margin-left: 15px;
+  }
 
   &:hover {
-    transform: scale(1.2);
+    overflow: visible;
   }
 }
 
 .program__card {
   background: #f2f2f2;
-  padding: 20px 0;
+  padding: 20px;
+  position: relative;
+
+  &::before {
+    content: "";
+    background: #d9d9d9;
+    height: 1px;
+    position: absolute;
+    bottom: 20%;
+    width: 240px;
+  }
+
+  @media (min-width: $width-tablet) {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    padding: 45px 83px 17px 52px;
+  }
+
+  @media (min-width: $width-desktop) {
+    gap: 80px;
+    display: initial;
+    position: initial;
+    padding: 77px 52px 55px;
+  }
+}
+
+.program__card--head {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  position: relative;
 }
 
 .program__cat-slim {
@@ -46,18 +150,75 @@
   width: 50px;
   height: 50px;
   bottom: 3px;
+  padding-right: 20px;
+  right: 50px;
+
+  @media (min-width: $width-tablet) {
+    right: 75px;
+    top: 81px;
+    width: 140px;
+    height: 194px;
+    position: absolute;
+  }
+
+  @media (min-width: $width-desktop) {
+    left: 18px;
+    top: calc(50% - 60px);
+    width: 70px;
+    height: 97px;
+    position: absolute;
+  }
 }
 
 .program__cat-pro {
   position: relative;
   width: 67px;
   height: 28px;
-  padding-top: 11px;
-  right: 8px;
+  right: 59px;
+
+  @media (min-width: $width-tablet) {
+    right: 27px;
+    top: 130px;
+    width: 268px;
+    height: 112px;
+    position: absolute;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  @media (min-width: $width-desktop) {
+    left: -18px;
+    top: calc(50% - 54px);
+    width: 134px;
+    height: 56px;
+  }
 }
 
 .program__circle {
-  position: absolute;
+  position: relative;
   width: 50px;
   height: 50px;
+
+  @media (min-width: $width-tablet) {
+    position: absolute;
+    top: 92px;
+    right: 62px;
+    content: "";
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #68b738;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 2px;
+    content: "";
+    border-radius: 50%;
+    background-color: #68b738;
+    top: calc(50% - 56px);
+  }
 }

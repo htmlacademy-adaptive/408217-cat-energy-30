@@ -1,31 +1,115 @@
+.program-details__wrapper {
+  @include base-wrapper;
+  padding: 0 20px;
+  max-width: 1220px;
+}
+
 .program-details__title {
   color: #000000;
   font-family: "Oswald", sans-serif;
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
+  padding-bottom: 12px;
+
+  @media (min-width: $width-desktop) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .program-details__list {
   @include list;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 17px;
+
+  @media (min-width: $width-tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 31px 60px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $width-desktop) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 60px 80px;
+  }
+}
+
+.program-details__text {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: 20px;
+
+  @media (min-width: $width-tablet) {
+    grid-template-rows: 80px 1fr;
+    row-gap: 31px;
+    min-height: 286px;
+    padding-right: 79px;
+    position: relative;
+  }
+
+  @media (min-width: $width-desktop) {
+    min-height: 240px;
+    padding-right: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .program-details__text::after {
+    position: absolute;
+    z-index: -1;
+    top: -37px;
+    right: 79px;
+    counter-increment: item;
+    content: counter(item);
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 280px;
+    line-height: 1;
+    text-align: right;
+    color: #f2f2f2;
+  }
 }
 
 .program-details__text--leaf {
   background-color: #68b738;
   padding: 14px 15px;
+
+  @media (min-width: $width-tablet) {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .program-details__text--instant {
   background-color: #68b738;
   padding: 14px 15px;
+
+  @media (min-width: $width-tablet) {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .program-details__text--eat {
   background-color: #68b738;
   padding: 14px 15px;
+
+  @media (min-width: $width-tablet) {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .program-details__text--watch {
   background-color: #68b738;
   padding: 14px 15px;
+
+  @media (min-width: $width-tablet) {
+    width: 80px;
+    height: 80px;
+  }
 }
