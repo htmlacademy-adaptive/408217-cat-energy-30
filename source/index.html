@@ -11,7 +11,7 @@
     <link rel="manifest" href="manifest.webmanifest">
     <script src="scripts/index.js" defer></script>
   </head>
-  <body class="page__body">
+  <body class="page__body"><div class="header">
     <header class="main-header">
       <div class="main-header__logo">
       <a class="main-header__logotype" href="index.html">
@@ -24,10 +24,12 @@
           <use href="images/icons/stack.svg#logotype" x="0" y="0"></use>
         </svg>
       </a>
-        <input class="main-header__burger-checkbox" type="checkbox" id="burger-checkbox" name="burger-checkbox">
-        <label class="main-header__burger" for="burger-checkbox"></label>
       </div>
-      </header>
+      <button class="main-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
+        <svg class="main-header__toggle-open" width="24" height="16">
+          <use href="images/icons/stack.svg#toggle-open" x="0" y="0"></use>
+        </svg>
+      </button>
       <nav class="main-nav">
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
@@ -44,7 +46,7 @@
           </div>
       </nav>
     </header>
-
+  </div>
     <main class="main-container">
       <h1 class="visually-hidden">Кэт энерджи</h1>
 
@@ -65,20 +67,24 @@
         <div class="program__wrapper">
           <ul class="program__list">
             <li class="program__card">
+              <div class="program__card program__card--head">
               <svg class="program__circle" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none"><circle cx="25" cy="25" r="25" fill="#68B738"/></svg>
               <svg class="program__cat-slim" width="36" height="50">
                 <use href="images/icons/stack.svg#cat-slim" x="0" y="0"></use>
               </svg>
               <h3 class="program__title">Похудение</h3>
+              </div>
               <p class="program__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
               <a class="program__link program__link--arrow" href="#">Каталог slim</a>
             </li>
             <li class="program__card">
+              <div class="program__card program__card--head">
               <svg class="program__circle" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none"><circle cx="25" cy="25" r="25" fill="#68B738"/></svg>
               <svg class="program__cat-pro" width="67" height="28">
                 <use href="images/icons/stack.svg#cat-pro" x="0" y="0"></use>
               </svg>
               <h3 class="program__title">Набор массы</h3>
+              </div>
               <p class="program__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
               <a class="program__link program__link--arrow" href="#">Каталог pro</a>
             </li>
@@ -118,39 +124,39 @@
         <div class="example__wrapper">
           <h2 class="example__title">Живой пример</h2>
             <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-            <ul>
+            <ul class="example__list">
               <li class="example__weight">
                 <p class="example__weight-title">5 КГ</p>
-                <p class="example__weight-description">Снижение веса</p>
+                <p class="example__weight-description">Снижение<br> веса</p>
               </li>
               <li class="example__days">
                 <p class="example__weight-title">60 ДНЕЙ</p>
-                <p class="example__weight-description">Затрачено времени</p>
+                <p class="example__weight-description">Затрачено<br> времени</p>
               </li>
-              <li class="example__result">Затраты на питание: 15000 руб.</li>
+              <li class="example__result">Затраты на питание: 15 000 руб.</li>
             </ul>
-            <div class="slideshow">
-              <div class="slideshow__slide slideshow__slide--cat-min">
-                <picture>
-                  <source type="image/png" media="(min-width: 1200px)" srcset="images/cat-min-tablet@1x.png 1x, images/cat-min-tablet@2x.png 2x" width="560" height="512">
-                  <source type="image/png" media="(min-width: 768px)" srcset="images/cat-min-tablet@1x.png 1x, images/cat-min-tablet@2x.png 2x" width="560" height="512">
-                  <img class="slideshow__image" src="images/cat-min-mobile@1x.png" srcset="images/cat-min-mobile@2x.png 2x" width="280" height="256" alt="Худой кот.">
-                </picture>
-              </div>
-              <div class="slideshow__slide slideshow__slide--cat-max">
-                <picture>
-                  <source type="image/png" media="(min-width: 1200px)" srcset="images/cat-max-tablet@1x.png 1x, images/cat-max-tablet@2x.png 2x" width="560" height="512">
-                  <source type="image/png" media="(min-width: 768px)" srcset="images/cat-max-tablet@1x.png 1x, images/cat-max-tablet@2x.png 2x" width="560" height="512">
-                  <img class="slideshow__image" src="images/cat-max-mobile@1x.png" srcset="images/cat-max-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот.">
-                </picture>
-              </div>
-              <button class="example__button button" type="button"><span class="visually-hidden">Слайдер</span>
-                  <svg class="slideshow__arrow" width="24" height="18">
-                    <use href="images/icons/two-arrows.svg#two-arrows" x="0" y="0"></use>
-                  </svg>
-              </button>
-              </div>
         </div>
+        <div class="slideshow">
+          <div class="slideshow__slide slideshow__slide--cat-max">
+            <picture>
+              <source type="image/png" media="(min-width: 1200px)" srcset="images/cat-max-tablet@1x.png 1x, images/cat-max-tablet@2x.png 2x" width="560" height="512">
+              <source type="image/png" media="(min-width: 768px)" srcset="images/cat-max-tablet@1x.png 1x, images/cat-max-tablet@2x.png 2x" width="560" height="512">
+              <img class="slideshow__image" src="images/cat-max-mobile@1x.png" srcset="images/cat-max-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот.">
+            </picture>
+          </div>
+          <div class="slideshow__slide slideshow__slide--cat-min">
+            <picture>
+              <source type="image/png" media="(min-width: 1200px)" srcset="images/cat-min-tablet@1x.png 1x, images/cat-min-tablet@2x.png 2x" width="560" height="512">
+              <source type="image/png" media="(min-width: 768px)" srcset="images/cat-min-tablet@1x.png 1x, images/cat-min-tablet@2x.png 2x" width="560" height="512">
+              <img class="slideshow__image" src="images/cat-min-mobile@1x.png" srcset="images/cat-min-mobile@2x.png 2x" width="280" height="256" alt="Худой кот.">
+            </picture>
+          </div>
+          <button class="example__button button" type="button"><span class="visually-hidden">Слайдер</span>
+              <svg class="slideshow__arrow" width="24" height="18">
+                <use href="images/icons/two-arrows.svg#two-arrows" x="0" y="0"></use>
+              </svg>
+          </button>
+          </div>
       </section>
 
       <footer class="footer">
@@ -158,12 +164,12 @@
           <h2 class="welcome__title visually-hidden">Приглашаем к сотрудничеству дилеров!</h2>
           <div class="welcome__wrapper">
             <p class="welcome__title">Приглашаем<br> к сотрудничеству<br> дилеров!</p>
-            <p class="welcome__address">ул. Большая<br> Конюшенная, д. 19/8<br><br> Санкт-Петербург</p>
+            <p class="welcome__address">ул. Большая<br> Конюшенная, д. 19/8<br> Санкт-Петербург</p>
           </div>
           <picture>
-            <source type="image/png" media="(min-width: 1200px)" srcset="images/map@1x.png 1x, images/map@2x.png 2x" max-width="100%" height="auto">
-            <source type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png, images/map-tablet@2x.png 2x" max-width="100%" height="auto">
-            <img class="welcome__map" src="images/map-mobile@1x.png" max-width="100%" height="auto" alt="Как проехать.">
+            <source type="image/png" media="(min-width: 1200px)" srcset="images/map@1x.png 1x, images/map@2x.png 2x">
+            <source type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png, images/map-tablet@2x.png 2x">
+            <img class="welcome__map" src="images/map-mobile@1x.png" alt="Как проехать." width="320" height="362">
           </picture>
         </section>
         <div class="footer__wrapper">

@@ -24,9 +24,12 @@
           <use href="images/icons/stack.svg#logotype" x="0" y="0"></use>
         </svg>
       </a>
-        <input class="main-header__burger-checkbox" type="checkbox" id="burger-checkbox" name="burger-checkbox">
-        <label class="main-header__burger" for="burger-checkbox"></label>
       </div>
+      <button class="main-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
+        <svg class="main-header__toggle-open" width="24" height="16">
+          <use href="images/icons/stack.svg#toggle-open" x="0" y="0"></use>
+        </svg>
+      </button>
       </header>
       <nav class="main-nav">
           <div class="main-nav__wrapper">
@@ -68,7 +71,7 @@
           <input class="form__control" type="number" id="age" name="age" value="7" required>
         </div>
         </fieldset>
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__fieldset--target">
           <legend class="form__legend visually-hidden">Цели</legend>
         <div class="form__group">
           <input class="form__radio" type="radio" id="lose-weight" name="choice" value="Похудение" checked="checked">
@@ -90,12 +93,12 @@
           <span class="form__legend form__legend--title">Контактные данные (владельца кота)</span>
         </legend>
         <div class="form__group">
-          <label class="form__label" for="email">E-mail*</label>
-          <input class="form__control form__control--icon-email" type="email" id="email" name="email" placeholder="кuklachev@gmail.com" required>
+          <label class="form__label form__label--email" for="email">E-mail*</label>
+          <input class="form__control" type="email" id="email" name="email" placeholder="кuklachev@gmail.com" required>
         </div>
         <div class="form__group">
-          <label class="form__label" for="tel">Телефон*</label>
-          <input class="form__control form__control--icon-phone" type="tel" id="tel" name="tel" placeholder="8 (960) 900-60-90" required>
+          <label class="form__label form__label--tel" for="tel">Телефон*</label>
+          <input class="form__control" type="tel" id="tel" name="tel" placeholder="8 (960) 900-60-90" required>
         </div>
       </fieldset>
 
@@ -136,9 +139,9 @@
           <p class="welcome__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
         <picture>
-          <source type="image/png" media="(min-width: 1200px)" srcset="images/map@1x.png 1x, images/map@2x.png 2x" max-width="100%" height="auto">
-          <source type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png, images/map-tablet@2x.png 2x" max-width="100%" height="auto">
-          <img class="welcome__map" src="images/map-mobile@1x.png" max-width="100%" height="auto" alt="Как проехать.">
+          <source type="image/png" media="(min-width: 1200px)" srcset="images/map@1x.png 1x, images/map@2x.png 2x">
+          <source type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png, images/map-tablet@2x.png 2x">
+          <img class="welcome__map" src="images/map-mobile@1x.png" alt="Как проехать." width="320" height="362">
         </picture>
       </section>
       <div class="footer__wrapper">

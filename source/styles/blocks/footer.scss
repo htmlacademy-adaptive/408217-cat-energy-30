@@ -1,6 +1,7 @@
 .footer {
   display: block;
   background: #f2f2f2;
+  margin: 0 auto;
 }
 
 .footer__wrapper {
@@ -8,15 +9,18 @@
   display: flex;
   justify-content: space-between;
   padding: 40px 20px;
+  max-width: 1220px;
 
   @media (max-width: $width-tablet) {
     align-items: center;
     flex-direction: column;
+    padding: 55px 30px;
   }
 }
 
 .footer__academy {
   display: flex;
+  width: 168px;
 }
 
 .footer__academy-logo {
@@ -33,6 +37,10 @@
   gap: 23px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  width: 280px;
+  font-size: 16px;
+  line-height: 20px;
 
   &:hover {
     fill: #68b738;

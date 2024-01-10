@@ -1,11 +1,27 @@
 .catalog__wrapper {
   @include base-wrapper;
+  max-width: 1220px;
+}
+
+.catalog__list {
+  display: grid;
+  row-gap: 11px;
+  margin: 0 auto;
+
+  @media (min-width: $width-tablet) {
+    width: 708px;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 1220px;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
+    row-gap: 63px;
+  }
 }
 
 .catalog__title {
   line-height: 36px;
-}
-
-.catalog__list {
-  @include list;
 }

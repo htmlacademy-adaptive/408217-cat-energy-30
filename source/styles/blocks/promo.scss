@@ -6,25 +6,61 @@
     url("../../images/index-background-desktop-2@2x.png") type("image/png") 2x
     );
   background-repeat: no-repeat;
-  background-color: #4f4e53;
   background-position: center top;
   color: #ffffff;
   text-align: center;
-  text-transform: uppercase;
   background-size: auto 302px;
+  background-color: #4d4b50;
+
+  @media (min-width: $width-tablet) {
+    background-image: none;
+    background-color: #ffffff;
+    position: relative;
+    padding: 0;
+  }
 }
 
 .promo__wrapper {
   @include base-wrapper;
   padding: 0;
+  max-width: 1220px;
+
+  @media (min-width: $width-desktop) {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 50%;
+      top: -400px;
+      right: 0;
+      bottom: 0;
+      z-index: -2;
+      background-color: #4d4b50;
+      background-image:
+        linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+        image-set(
+        url("../../images/index-background-desktop-1@1x.png") type("image/png") 1x,
+        url("../../images/index-background-desktop-1@2x.png") type("image/png") 2x
+        );
+      background-repeat: no-repeat;
+      background-position: 0 100%;
+    }
+  }
 }
 
 .promo__title {
   font-family: "Oswald", sans-serif;
   font-size: 36px;
   line-height: 36px;
-  padding: 27px 35px 0 36px;
   font-weight: 400;
+  padding: 27px 35px 0;
+
+  @media (min-width: $width-tablet) {
+    font-size: 60px;
+    margin-bottom: 41px;
+    color: #000000;
+    width: 434px;
+    line-height: 60px;
+  }
 }
 
 .promo__description {
@@ -32,6 +68,13 @@
   font-size: 14px;
   line-height: 14px;
   margin: 0;
+  text-transform: uppercase;
+
+  @media (min-width: $width-tablet) {
+    line-height: 1;
+    margin-bottom: 49px;
+    color: #000000;
+  }
 }
 
 .promo__img {
@@ -43,13 +86,15 @@
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 20px;
-  text-transform: uppercase;
-  text-decoration: none;
-  display: flex;
+  padding: 10px 0;
   width: 280px;
-  padding: 10px 44px;
-  justify-content: center;
-  align-items: center;
-  gap: 4px;
-  margin: auto;
+  margin: 0 auto;
+  display: block;
+
+  @media (min-width: $width-tablet) {
+    padding: 17px 26px;
+    font-size: 20px;
+    line-height: 20px;
+    width: 244px;
+  }
 }

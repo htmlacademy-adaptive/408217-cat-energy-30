@@ -24,26 +24,28 @@
           <use href="images/icons/stack.svg#logotype" x="0" y="0"></use>
         </svg>
       </a>
-        <input class="main-header__burger-checkbox" type="checkbox" id="burger-checkbox" name="burger-checkbox">
-        <label class="main-header__burger" for="burger-checkbox"></label>
       </div>
-      </header>
+      <button class="main-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
+        <svg class="main-header__toggle-open" width="24" height="16">
+          <use href="images/icons/stack.svg#toggle-open" x="0" y="0"></use>
+        </svg>
+      </button>
       <nav class="main-nav">
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list">
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="index.html">Главная</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link main-nav__link--current" href="#">Каталог продукции</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="form.html">Подбор программы</a>
-              </li>
-            </ul>
-          </div>
-      </nav>
-    </header>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--current" href="#">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+      </header>
 
     <main class="main-container">
       <section class="catalog">
@@ -260,9 +262,9 @@
           <p class="welcome__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
         <picture>
-          <source type="image/png" media="(min-width: 1200px)" srcset="images/map@1x.png 1x, images/map@2x.png 2x" max-width="100%" height="auto">
-          <source type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png, images/map-tablet@2x.png 2x" max-width="100%" height="auto">
-          <img class="welcome__map" src="images/map-mobile@1x.png" max-width="100%" height="auto" alt="Как проехать.">
+          <source type="image/png" media="(min-width: 1200px)" srcset="images/map@1x.png 1x, images/map@2x.png 2x">
+          <source type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png, images/map-tablet@2x.png 2x">
+          <img class="welcome__map" src="images/map-mobile@1x.png" alt="Как проехать." width="320" height="362">
         </picture>
       </section>
       <div class="footer__wrapper">
