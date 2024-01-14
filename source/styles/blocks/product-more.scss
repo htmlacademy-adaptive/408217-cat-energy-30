@@ -1,3 +1,7 @@
+.product-more {
+  padding: 25px 0;
+}
+
 .product-more__title {
   color: #111111;
   text-align: center;
@@ -5,6 +9,7 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  padding-top: 10px;
 }
 
 .product-more__description {
@@ -27,6 +32,7 @@
   border: 0;
   text-decoration: none;
   text-transform: uppercase;
+  padding-top: 12px;
 
   &:hover {
     color: #444444;

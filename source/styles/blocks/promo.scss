@@ -18,14 +18,8 @@
     position: relative;
     padding: 0;
   }
-}
 
-.promo__wrapper {
-  @include base-wrapper;
-  padding: 0;
-  max-width: 1220px;
-
-  @media (min-width: $width-desktop) {
+  /*@media (min-width: $width-desktop) {
     &::after {
       content: "";
       position: absolute;
@@ -44,7 +38,13 @@
       background-repeat: no-repeat;
       background-position: 0 100%;
     }
-  }
+  }*/
+}
+
+.promo__wrapper {
+  @include base-wrapper;
+  padding: 0;
+  max-width: 1220px;
 }
 
 .promo__title {

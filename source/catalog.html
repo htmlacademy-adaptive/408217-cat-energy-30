@@ -25,12 +25,9 @@
         </svg>
       </a>
       </div>
-      <button class="main-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
-        <svg class="main-header__toggle-open" width="24" height="16">
-          <use href="images/icons/stack.svg#toggle-open" x="0" y="0"></use>
-        </svg>
       </button>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--opened main-nav--nojs">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
@@ -54,13 +51,14 @@
 
         <ul class="catalog__list">
           <li class="catalog-card">
-            <a href="#">
+            <a class="catalog-card__img" href="#">
               <picture>
                 <source type="image/png" media="(min-width: 1200px)" srcset="images/catalog-1-desktop@1x.png 1x, images/catalog-1-desktop@2x.png 2x" width="169" height="210">
                 <source type="image/png" media="(min-width: 768px)" srcset="images/catalog-1-tablet@1x.png 1x, images/catalog-1-tablet@2x.png 2x" width="200" height="210">
                 <img class="catalog-card__image" src="images/catalog-1-mobile@1x.png" srcset="images/catalog-1-mobile@2x.png 2x" width="140" height="107" alt="Cat Energy PRO 500 г.">
               </picture></a>
             <h2 class="catalog-card__title">Cat Energy PRO 500 г</h2>
+            <div class="catalog-card__list">
             <ul class="catalog-card__product-specifications">
               <li class="catalog-card__product-specifications-text">Масса</li>
               <li class="catalog-card__product-specifications-text">500 г</li>
@@ -73,16 +71,18 @@
               <li class="catalog-card__product-specifications-text">Цена</li>
               <li class="catalog-card__product-specifications-text">700 р</li>
             </ul>
+            </div>
             <a class="catalog-card__button button" href="#">Заказать</a>
           </li>
           <li class="catalog-card">
-            <a href="#">
+            <a class="catalog-card__img" href="#">
               <picture>
                 <source type="image/png" media="(min-width: 1200px)" srcset="images/catalog-2-desktop@1x.png 1x, images/catalog-2-desktop@2x.png 2x" width="169" height="210">
                 <source type="image/png" media="(min-width: 768px)" srcset="images/catalog-2-tablet@1x.png@1x.png 1x, images/catalog-2-tablet@2x.png 2x" width="200" height="210">
                 <img class="catalog-card__image" src="images/catalog-2-mobile@1x.png" srcset="images/catalog-2-mobile@2x.png 2x" width="140" height="107" alt="Cat Energy PRO 1000 г.">
               </picture></a>
             <h2 class="catalog-card__title">Cat Energy PRO 1000 г</h2>
+            <div class="catalog-card__list">
             <ul class="catalog-card__product-specifications">
               <li class="catalog-card__product-specifications-text">Масса</li>
               <li class="catalog-card__product-specifications-text">1000 г</li>
@@ -95,16 +95,18 @@
               <li class="catalog-card__product-specifications-text">Цена</li>
               <li class="catalog-card__product-specifications-text">1000 р</li>
             </ul>
+            </div>
             <a class="catalog-card__button button" href="#">Заказать</a>
           </li>
           <li class="catalog-card">
-            <a href="#">
+            <a class="catalog-card__img" href="#">
               <picture>
                 <source type="image/png" media="(min-width: 1200px)" srcset="images/catalog-3-desktop@1x.png 1x, images/catalog-3-desktop@2x.png 2x" width="169" height="210">
                 <source type="image/png" media="(min-width: 768px)" srcset="images/catalog-3-tablet@1x.png@1x.png 1x, images/catalog-3-tablet@2x.png 2x" width="200" height="210">
                 <img class="catalog-card__image" src="images/catalog-3-mobile@1x.png" srcset="images/catalog-3-mobile@2x.png 2x" width="140" height="107" alt="Cat Energy PRO 1000 г.">
               </picture></a>
             <h2 class="catalog-card__title">Cat Energy PRO 500 г</h2>
+            <div class="catalog-card__list">
             <ul class="catalog-card__product-specifications">
               <li class="catalog-card__product-specifications-text">Масса</li>
               <li class="catalog-card__product-specifications-text">500 г</li>
@@ -113,6 +115,7 @@
               <li class="catalog-card__product-specifications-text">Вкус</li>
               <li class="catalog-card__product-specifications-text">Рыба</li>
             </ul>
+            </div>
             <ul class="catalog-card__product-specifications">
               <li class="catalog-card__product-specifications-text">Цена</li>
               <li class="catalog-card__product-specifications-text">700 р</li>
@@ -120,13 +123,14 @@
             <a class="catalog-card__button button" href="#">Заказать</a>
           </li>
           <li class="catalog-card">
-            <a href="#">
+            <a class="catalog-card__img" href="#">
               <picture>
                 <source type="image/png" media="(min-width: 1200px)" srcset="images/catalog-4-desktop@1x.png 1x, images/catalog-4-desktop@2x.png 2x" width="169" height="210">
                 <source type="image/png" media="(min-width: 768px)" srcset="images/catalog-4-tablet@1x.png@1x.png 1x, images/catalog-4-tablet@2x.png 2x" width="200" height="210">
                 <img class="catalog-card__image" src="images/catalog-4-mobile@1x.png" srcset="images/catalog-4-mobile@2x.png 2x" width="140" height="107" alt="Cat Energy PRO 1000 г.">
               </picture></a>
             <h2 class="catalog-card__title">Cat Energy PRO 1000 г</h2>
+            <div class="catalog-card__list">
             <ul class="catalog-card__product-specifications">
               <li class="catalog-card__product-specifications-text">Масса</li>
               <li class="catalog-card__product-specifications-text">500 г</li>
@@ -135,6 +139,7 @@
               <li class="catalog-card__product-specifications-text">Вкус</li>
               <li class="catalog-card__product-specifications-text">Рыба</li>
             </ul>
+            </div>
             <ul class="catalog-card__product-specifications">
               <li class="catalog-card__product-specifications-text">Цена</li>
               <li class="catalog-card__product-specifications-text">1000 р</li>
@@ -142,13 +147,14 @@
             <a class="catalog-card__button button" href="#">Заказать</a>
           </li>
           <li class="catalog-card">
-            <a href="#">
+            <a class="catalog-card__img" href="#">
               <picture>
                 <source type="image/png" media="(min-width: 1200px)" srcset="images/catalog-5-desktop@1x.png 1x, images/catalog-5-desktop@2x.png 2x" width="169" height="210">
                 <source type="image/png" media="(min-width: 768px)" srcset="images/catalog-5-tablet@1x.png@1x.png 1x, images/catalog-5-tablet@2x.png 2x" width="200" height="210">
                 <img class="catalog-card__image" src="images/catalog-5-mobile@1x.png" srcset="images/catalog-5-mobile@2x.png 2x" width="140" height="107" alt="Cat Energy PRO 1000 г.">
               </picture></a>
             <h2 class="catalog-card__title">Cat Energy SLIM 500 г</h2>
+            <div class="catalog-card__list">
             <ul class="catalog-card__product-specifications">
               <li class="catalog-card__product-specifications-text">Масса</li>
               <li class="catalog-card__product-specifications-text">500 г</li>
@@ -161,16 +167,18 @@
               <li class="catalog-card__product-specifications-text">Цена</li>
               <li class="catalog-card__product-specifications-text">400 р</li>
             </ul>
+            </div>
             <a class="catalog-card__button button" href="#">Заказать</a>
           </li>
           <li class="catalog-card">
-            <a href="#">
+            <a class="catalog-card__img" href="#">
               <picture>
                 <source type="image/png" media="(min-width: 1200px)" srcset="images/catalog-6-desktop@1x.png 1x, images/catalog-6-desktop@2x.png 2x" width="169" height="210">
                 <source type="image/png" media="(min-width: 768px)" srcset="images/catalog-6-tablet@1x.png@1x.png 1x, images/catalog-6-tablet@2x.png 2x" width="200" height="210">
                 <img class="catalog-card__image" src="images/catalog-6-mobile@1x.png" srcset="images/catalog-6-mobile@2x.png 2x" width="140" height="107" alt="Cat Energy PRO 1000 г.">
               </picture></a>
             <h2 class="catalog-card__title">Cat Energy SLIM 1000 г</h2>
+            <div class="catalog-card__list">
             <ul class="catalog-card__product-specifications">
               <li class="catalog-card__product-specifications-text">Масса</li>
               <li class="catalog-card__product-specifications-text">1000 г</li>
@@ -183,16 +191,18 @@
               <li class="catalog-card__product-specifications-text">Цена</li>
               <li class="catalog-card__product-specifications-text">700 р</li>
             </ul>
+            </div>
             <a class="catalog-card__button button" href="#">Заказать</a>
           </li>
           <li class="catalog-card">
-            <a href="#">
+            <a class="catalog-card__img" href="#">
               <picture>
                 <source type="image/png" media="(min-width: 1200px)" srcset="images/catalog-7-desktop@1x.png 1x, images/catalog-7-desktop@2x.png 2x" width="169" height="210">
                 <source type="image/png" media="(min-width: 768px)" srcset="images/catalog-7-tablet@1x.png@1x.png 1x, images/catalog-7-tablet@2x.png 2x" width="200" height="210">
                 <img class="catalog-card__image" src="images/catalog-7-mobile@1x.png" srcset="images/catalog-7-mobile@2x.png 2x" width="140" height="107" alt="Cat Energy PRO 1000 г.">
               </picture></a>
             <h2 class="catalog-card__title">Cat Energy SLIM 500 г</h2>
+            <div class="catalog-card__list">
             <ul class="catalog-card__product-specifications">
               <li class="catalog-card__product-specifications-text">Масса</li>
               <li class="catalog-card__product-specifications-text">500 г</li>
@@ -205,9 +215,10 @@
               <li class="catalog-card__product-specifications-text">Цена</li>
               <li class="catalog-card__product-specifications-text">500 р</li>
             </ul>
+          </div>
             <a class="catalog-card__button button" href="#">Заказать</a>
-          </li>
-        </ul>
+              </li>
+          </ul>
         <div class="product-more">
           <svg class="product-more__icon" width="128" height="24">
             <use href="images/icons/stack.svg#plus-more" x="0" y="0"></use>
@@ -223,26 +234,34 @@
           <ul class="card-addit__list">
             <li class="card-addit__card">
               <h3 class="card-addit__name">Сахарозаменитель</h3>
-              <p class="card-addit__size">1 упаковка (100 г)</p>
-              <p class="card-addit__price">200 р</p>
+              <div class="card-addit__item">
+              <span class="card-addit__size">1 упаковка (100 г)</span>
+              <span class="card-addit__price">200 р</span>
+              </div>
               <a class="card-addit__card-button button" href="#">Заказать</a>
             </li>
             <li class="card-addit__card">
               <h3 class="card-addit__name">Питьевая вода</h3>
-              <p class="card-addit__size">5 литров</p>
-              <p class="card-addit__price">50 р</p>
+              <div class="card-addit__item">
+              <span class="card-addit__size">5 литров</span>
+              <span class="card-addit__price">50 р</span>
+              </div>
               <a class="card-addit__card-button button" href="#">Заказать</a>
             </li>
             <li class="card-addit__card">
               <h3 class="card-addit__name">Молоко</h3>
-              <p class="card-addit__size">1 литр</p>
-              <p class="card-addit__price">100 р</p>
+              <div class="card-addit__item">
+              <span class="card-addit__size">1 литр</span>
+              <span class="card-addit__price">100 р</span>
+              </div>
               <a class="card-addit__card-button button" href="#">Заказать</a>
             </li>
             <li class="card-addit__card">
               <h3 class="card-addit__name">Витамины</h3>
-              <p class="card-addit__size">1 упаковка (30 г)</p>
-              <p class="card-addit__price">300 р</p>
+              <div class="card-addit__item">
+              <span class="card-addit__size">1 упаковка (30 г)</span>
+              <span class="card-addit__price">300 р</span>
+              </div>
               <a class="card-addit__card-button button" href="#">Заказать</a>
             </li>
           </ul>
@@ -258,7 +277,7 @@
       <section class="welcome">
         <h2 class="welcome__title visually-hidden">Приглашаем к сотрудничеству дилеров!</h2>
         <div class="welcome__wrapper">
-          <p class="welcome__title">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="welcome__title">Приглашаем<br> к сотрудничеству дилеров!</p>
           <p class="welcome__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
         <picture>

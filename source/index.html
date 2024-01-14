@@ -25,12 +25,8 @@
         </svg>
       </a>
       </div>
-      <button class="main-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
-        <svg class="main-header__toggle-open" width="24" height="16">
-          <use href="images/icons/stack.svg#toggle-open" x="0" y="0"></use>
-        </svg>
-      </button>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--opened main-nav--nojs">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
               <li class="main-nav__item">
@@ -124,17 +120,20 @@
         <div class="example__wrapper">
           <h2 class="example__title">Живой пример</h2>
             <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-            <ul class="example__list">
-              <li class="example__weight">
-                <p class="example__weight-title">5 КГ</p>
-                <p class="example__weight-description">Снижение<br> веса</p>
-              </li>
-              <li class="example__days">
-                <p class="example__weight-title">60 ДНЕЙ</p>
-                <p class="example__weight-description">Затрачено<br> времени</p>
-              </li>
-              <li class="example__result">Затраты на питание: 15 000 руб.</li>
-            </ul>
+            <dl class="example__list">
+              <div class="example__weight">
+                <dt class="example__weight-title">5 КГ</dt>
+                <dd class="example__weight-description">Снижение<br> веса</dd>
+              </div>
+              <div class="example__days">
+                <dt class="example__weight-title">60 ДНЕЙ</dt>
+                <dd class="example__weight-description">Затрачено<br> времени</p>
+              </div>
+            </dl>
+            <dl>
+              <dt class="example__result">Затраты на питание:</dt>
+              <dd>15 000 руб.</dd>
+            </dl>
         </div>
         <div class="slideshow">
           <div class="slideshow__slide slideshow__slide--cat-max">

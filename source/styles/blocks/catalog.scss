@@ -7,6 +7,7 @@
   display: grid;
   row-gap: 11px;
   margin: 0 auto;
+  @include list;
 
   @media (min-width: $width-tablet) {
     width: 708px;
@@ -16,7 +17,7 @@
 
   @media (min-width: $width-desktop) {
     width: 1220px;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 245px);
     column-gap: 80px;
     row-gap: 63px;
   }
