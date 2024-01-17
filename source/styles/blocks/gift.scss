@@ -11,7 +11,6 @@
   background-repeat: no-repeat;
   background-position: center;
   background-color: #ffffff;
-  background-size: 280px;
 
   &::before {
     content: url("/images/icons/icon-gift.svg#icon-gift");
@@ -19,6 +18,18 @@
     left: 50%;
     transform: translateX(-50%);
     top: 56px;
+  }
+
+  @media (min-width: $width-tablet) {
+    background-image:
+    linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+    image-set(
+    url("/images/backpack-tablet@1x.png") type("image/png") 1x,
+    url("/images/backpack-tablet@2x.png") type("image/png") 2x
+    );
+    width: 707px;
+    height: 200px;
+    margin: 0 auto;
   }
 }
 

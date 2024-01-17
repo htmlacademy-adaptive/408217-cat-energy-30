@@ -16,11 +16,11 @@
       <div class="main-header__logo">
       <a class="main-header__logotype" href="index.html">
         <picture>
-          <source type="image/svg+xml" media="(min-width: 1200px)" srcset="../../images/icons/logo.svg">
-          <source type="image/svg+xml" media="(min-width: 768px)" srcset="../../images/icons/logo-pic.svg">
+          <source type="image/svg+xml" media="(min-width: 1200px)" srcset="../../images/icons/logo.svg" width="70" height="59">
+          <source type="image/svg+xml" media="(min-width: 768px)" srcset="../../images/icons/logo-pic.svg" width="60" height="50">
           <img src="../../images/icons/logo-mobile.svg" width="33" height="38" alt="Кэт энерджи.">
         </picture>
-        <svg width="101" height="18">
+        <svg class="main-header__text" width="101" height="18">
           <use href="images/icons/stack.svg#logotype" x="0" y="0"></use>
         </svg>
       </a>
@@ -165,12 +165,9 @@
             <span class="welcome__title">Приглашаем<br> к сотрудничеству<br> дилеров!</span>
             <span class="welcome__address">ул. Большая<br> Конюшенная, д. 19/8<br> Санкт-Петербург</span>
           </div>
-          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa88e3c8ee34bbc74e85f70c7eb30a5b0a643686cc8f80dc9a7617f42eb5e33e6&amp;source=constructor" min-width="320" height="362" frameborder="0"></iframe>
-          <picture>
-            <source type="image/png" media="(min-width: 1200px)" srcset="images/map@1x.png 1x, images/map@2x.png 2x">
-            <source type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png, images/map-tablet@2x.png 2x">
-            <img class="welcome__map" src="images/map-mobile@1x.png" alt="Как проехать." width="320" height="362">
-          </picture>
+          <div class="welcome__map">
+          <iframe class="welcome__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa88e3c8ee34bbc74e85f70c7eb30a5b0a643686cc8f80dc9a7617f42eb5e33e6&amp;source=constructor" width="320" height="362" frameborder="0"></iframe>
+          </div>
         </section>
         <div class="footer__wrapper">
           <a class="footer__logotype" href="index.html">

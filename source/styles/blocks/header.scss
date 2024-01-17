@@ -1,15 +1,14 @@
 .header {
   display: block;
 
-  /*@media (min-width: $width-desktop) {
+  @media (min-width: $width-desktop) {
     &::after {
       content: "";
       position: absolute;
       width: 50%;
-      top: -400px;
-      right: 0;
-      bottom: 0;
-      z-index: -2;
+      min-height: 694px;
+      top: -117px;
+      z-index: -1;
       background-color: #4d4b50;
       background-image:
         linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
@@ -18,7 +17,10 @@
         url("../../images/index-background-desktop-1@2x.png") type("image/png") 2x
         );
       background-repeat: no-repeat;
-      background-position: 0 100%;
+      background-position: right;
+      background-size: contain;
+      right: 0;
+      top: 0;
     }
-  }*/
+  }
 }
