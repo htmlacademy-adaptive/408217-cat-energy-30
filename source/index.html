@@ -25,7 +25,7 @@
         </svg>
       </a>
       </div>
-      <nav class="main-nav main-nav--closed main-nav--opened main-nav--nojs">
+      <nav class="main-nav main-nav--opened main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
@@ -91,28 +91,28 @@
       <section class="program-details">
         <div class="program-details__wrapper">
           <h2 class="program-details__title">Как это работает</h2>
-          <ul class="program-details__list">
-            <li class="program-details__text">
-              <svg class="program-details__text program-details__text--leaf" width="30" height="32">
+          <ol class="program-details__list">
+            <li class="program-details__text program-details__text--leaf">
+              <svg class="program-details__text" width="30" height="32">
                 <use href="images/icons/stack.svg#icon-leaf" x="0" y="0"></use>
               </svg>
               Функциональное питание содержит только полезные питательные вещества.</li>
-            <li class="program-details__text">
+            <li class="program-details__text program-details__text--instant">
               <svg class="program-details__text program-details__text--instant" width="30" height="32">
                 <use href="images/icons/stack.svg#icon-instant" x="0" y="0"></use>
               </svg>
               Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
-            <li class="program-details__text">
+            <li class="program-details__text program-details__text--eat">
               <svg class="program-details__text program-details__text--eat" width="30" height="32">
                 <use href="images/icons/stack.svg#icon-eat" x="0" y="0"></use>
               </svg>
               Замените один-два приема обычной еды на наше функциональное питание.</li>
-            <li class="program-details__text">
+            <li class="program-details__text program-details__text--watch">
               <svg class="program-details__text program-details__text--watch" width="30" height="32">
                 <use href="images/icons/stack.svg#icon-watch" x="0" y="0"></use>
               </svg>
               Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
-          </ul>
+          </ol>
         </div>
       </section>
 
@@ -130,10 +130,10 @@
                 <dd class="example__weight-description">Затрачено<br> времени</p>
               </div>
             </dl>
-            <dl>
-              <dt class="example__result">Затраты на питание:</dt>
-              <dd>15 000 руб.</dd>
-            </dl>
+            <div class="example__result">
+              <span class="example__result-title">Затраты на питание:</span>
+              <span class="example__result-description">15 000 руб.</span>
+            </div>
         </div>
         <div class="slideshow">
           <div class="slideshow__slide slideshow__slide--cat-max">
@@ -162,9 +162,10 @@
         <section class="welcome">
           <h2 class="welcome__title visually-hidden">Приглашаем к сотрудничеству дилеров!</h2>
           <div class="welcome__wrapper">
-            <p class="welcome__title">Приглашаем<br> к сотрудничеству<br> дилеров!</p>
-            <p class="welcome__address">ул. Большая<br> Конюшенная, д. 19/8<br> Санкт-Петербург</p>
+            <span class="welcome__title">Приглашаем<br> к сотрудничеству<br> дилеров!</span>
+            <span class="welcome__address">ул. Большая<br> Конюшенная, д. 19/8<br> Санкт-Петербург</span>
           </div>
+          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa88e3c8ee34bbc74e85f70c7eb30a5b0a643686cc8f80dc9a7617f42eb5e33e6&amp;source=constructor" min-width="320" height="362" frameborder="0"></iframe>
           <picture>
             <source type="image/png" media="(min-width: 1200px)" srcset="images/map@1x.png 1x, images/map@2x.png 2x">
             <source type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png, images/map-tablet@2x.png 2x">

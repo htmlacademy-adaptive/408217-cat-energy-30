@@ -55,11 +55,11 @@
         <fieldset class="form__fieldset">
           <legend class="form__legend visually-hidden">Данные кота</legend>
         <div class="form__group">
-          <label class="form__label" for="name">Имя*</label>
+          <label class="form__label" for="name">Имя:*</label>
           <input class="form__control" type="text" id="name" name="name" value="Барсик" required>
         </div>
         <div class="form__group">
-          <label class="form__label" for="weight">Вес (кг)*</label>
+          <label class="form__label" for="weight">Вес (кг):*</label>
           <input class="form__control" type="number" id="weight" name="weight" value="7" required>
         </div>
         <div class="form__group">
@@ -70,16 +70,22 @@
         <fieldset class="form__fieldset form__fieldset--target">
           <legend class="form__legend visually-hidden">Цели</legend>
         <div class="form__group">
-          <input class="form__radio" type="radio" id="lose-weight" name="choice" value="Похудение" checked="checked">
-          <label class="form__radio-label" for="lose-weight">Похудение</label>
+          <label class="form__radio-label">
+          <input class="form__radio" type="radio" name="choice" value="Похудение" checked="checked">
+          <span class="form__radio-circle">Похудение</span>
+          </label>
         </div>
         <div class="form__group">
-          <input class="form__radio" type="radio" id="getting-fat" name="choice" value="Набор массы">
-          <label class="form__radio-label" for="getting-fat">Набор массы</label>
+          <label class="form__radio-label">
+          <input class="form__radio" type="radio" name="choice" value="Набор массы">
+          <span class="form__radio-circle">Набор массы</span>
+          </label>
         </div>
         <div class="form__group">
-          <input class="form__radio" type="radio" id="question" name="choice" value="Не знаю">
-          <label class="form__radio-label" for="question">Не знаю (нужен ваш совет)</label>
+          <label class="form__radio-label">
+          <input class="form__radio" type="radio" name="choice" value="Не знаю">
+          <span class="form__radio-circle">Не знаю (нужен ваш совет)</span>
+          </label>
         </div>
         </fieldset>
       </div>
@@ -89,18 +95,18 @@
           <span class="form__legend form__legend--title">Контактные данные (владельца кота)</span>
         </legend>
         <div class="form__group">
-          <label class="form__label form__label--email" for="email">E-mail*</label>
+          <label class="form__label form__label--email" for="email">Mail:*</label>
           <input class="form__control" type="email" id="email" name="email" placeholder="кuklachev@gmail.com" required>
         </div>
         <div class="form__group">
-          <label class="form__label form__label--tel" for="tel">Телефон*</label>
+          <label class="form__label form__label--tel" for="tel">Телефон:*</label>
           <input class="form__control" type="tel" id="tel" name="tel" placeholder="8 (960) 900-60-90" required>
         </div>
       </fieldset>
 
       <fieldset class="form__fieldset">
         <legend class="form__legend">Комментарий</legend>
-        <textarea class="form__control form__control--textarea" name="form-comment" id="form-comment" cols="10" rows="5"></textarea>
+        <textarea class="form__control form__control--textarea" name="form-comment" id="form-comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
 
       <fieldset class="form__fieldset">

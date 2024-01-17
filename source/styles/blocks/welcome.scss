@@ -3,9 +3,10 @@
 }
 
 .welcome__wrapper {
-  padding: 26px 20px 0;
-  display: grid;
-  grid-template-columns: repeat(2, 140px);
+  padding: 26px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 
   @media (min-width: $width-tablet) {
     padding: 59px 40px;
@@ -21,6 +22,12 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+.welcome__address {
+  font-size: 14px;
+  line-height: 20px;
+  padding-right: 3px;
 }
 
 .welcome__map {

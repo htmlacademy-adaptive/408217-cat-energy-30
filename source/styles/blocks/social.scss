@@ -3,11 +3,13 @@
   gap: 24px;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
-  padding: 20px 0;
+  padding: 24px 0;
 
   @media (min-width: $width-tablet) {
-    border: none;
+    border: 0;
     padding: 0;
+    padding-left: 130px;
+    padding-top: 5px;
   }
 
   @media (min-width: $width-desktop) {

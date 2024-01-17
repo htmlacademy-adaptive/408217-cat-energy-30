@@ -1,7 +1,7 @@
 .header {
   display: block;
 
-  @media (min-width: $width-desktop) {
+  /*@media (min-width: $width-desktop) {
     &::after {
       content: "";
       position: absolute;
@@ -20,5 +20,5 @@
       background-repeat: no-repeat;
       background-position: 0 100%;
     }
-  }
+  }*/
 }

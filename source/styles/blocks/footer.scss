@@ -5,16 +5,15 @@
 }
 
 .footer__wrapper {
-  @include base-wrapper;
+  align-items: center;
+    flex-direction: column;
+    padding: 40px 20px;
+    display: flex;
+
+  @media (min-width: $width-tablet) {
+  flex-direction: row;
   display: flex;
   justify-content: space-between;
-  padding: 40px 20px;
-  max-width: 1220px;
-
-  @media (max-width: $width-tablet) {
-    align-items: center;
-    flex-direction: column;
-    padding: 55px 30px;
   }
 }
 

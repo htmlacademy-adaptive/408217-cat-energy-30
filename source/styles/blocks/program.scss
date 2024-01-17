@@ -5,6 +5,10 @@
 .program__wrapper {
   min-width: 280px;
   margin: 0 auto;
+
+  @media (min-width: $width-tablet) {
+    width: 708px;
+  }
 }
 
 .program__list {
@@ -16,6 +20,13 @@
 
 .program__card {
   background: #f2f2f2;
+
+  @media (min-width: $width-tablet) {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 316px;
+    padding: 77px 0 53px 52px;
+  }
 }
 
 .program__card--head {
@@ -90,10 +101,12 @@
     background: url("../../images/icons/stack.svg#icon-arrow");
     background-repeat: no-repeat;
     background-size: 32px 10px;
-    background-position: -8px;
+    background-position: -6px;
     overflow: hidden;
     position: absolute;
     margin-left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   &:hover {

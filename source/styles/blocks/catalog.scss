@@ -1,6 +1,11 @@
 .catalog__wrapper {
   @include base-wrapper;
   max-width: 1220px;
+  border-top: 1px solid #ebebeb;
+
+  @media (min-width: $width-desktop) {
+    position: relative;
+  }
 }
 
 .catalog__list {
@@ -20,6 +25,7 @@
     grid-template-columns: repeat(4, 245px);
     column-gap: 80px;
     row-gap: 63px;
+    margin-top: 47px;
   }
 }
 

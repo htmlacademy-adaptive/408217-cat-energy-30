@@ -51,6 +51,20 @@
     min-height: 286px;
     padding-right: 79px;
     position: relative;
+
+    &::after {
+      position: absolute;
+      z-index: -1;
+      top: -37px;
+      right: 79px;
+      counter-increment: item;
+      content: counter(item);
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 280px;
+      line-height: 1;
+      text-align: right;
+      color: #f2f2f2;
+    }
   }
 
   @media (min-width: $width-desktop) {
@@ -59,25 +73,15 @@
   }
 }
 
-@media (min-width: 768px) {
-  .program-details__text::after {
-    position: absolute;
-    z-index: -1;
-    top: -37px;
-    right: 79px;
-    counter-increment: item;
-    content: counter(item);
-    font-family: "Oswald", "Arial", sans-serif;
-    font-size: 280px;
-    line-height: 1;
-    text-align: right;
-    color: #f2f2f2;
-  }
-}
-
 .program-details__text--leaf {
-  background-color: #68b738;
   padding: 14px 15px;
+
+  &::before {
+    content: "";
+    background-image: url("../../images/icons/icon-leaf.svg");
+    background-color: #68b738;
+    background-repeat: no-repeat;
+  }
 
   @media (min-width: $width-tablet) {
     width: 80px;
