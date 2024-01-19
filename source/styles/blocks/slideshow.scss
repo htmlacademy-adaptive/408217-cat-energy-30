@@ -2,8 +2,8 @@
   display: block;
   position: relative;
   width: 280px;
-  height: 256px;
-  padding: 0 20px 40px;
+  height: 270px;
+  padding: 15px 20px 27px;
   margin: 0 auto;
 
   &::before {
@@ -15,7 +15,7 @@
     align-items: center;
     position: absolute;
     left: -18px;
-    top: 37%;
+    top: 39%;
     background: #ffffff;
     stroke-width: 2px;
     border-radius: 50%;
@@ -23,6 +23,12 @@
     left: 50%;
     transform: translateX(-48%);
     z-index: 1;
+
+    @media (min-width: $width-tablet) {
+      top: 78%;
+      left: 48%;
+      transform: translateX(-46%);
+    }
   }
 
   &::after {
@@ -37,6 +43,11 @@
     background: #666666;
     left: 49%;
     z-index: 0;
+
+    @media (min-width: $width-tablet) {
+      height: 512px;
+      left: 48%;
+    }
   }
 
   &:hover {

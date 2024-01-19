@@ -1,7 +1,19 @@
+.program-details {
+  @media (min-width: $width-tablet) {
+    margin-top: 26px;
+  }
+}
+
 .program-details__wrapper {
   @include base-wrapper;
   padding: 0 20px;
   max-width: 1220px;
+
+  @media (min-width: $width-tablet) {
+    margin: 0 auto;
+    padding: 0 30px;
+    max-width: 1220px;
+  }
 }
 
 .program-details__title {
@@ -12,6 +24,11 @@
   font-weight: 400;
   padding-bottom: 42px;
   margin: 1px;
+
+  @media (min-width: $width-tablet) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 
   @media (min-width: $width-desktop) {
     font-size: 60px;
@@ -64,6 +81,11 @@
       line-height: 1;
       text-align: right;
       color: #f2f2f2;
+
+      @media (min-width: $width-tablet) {
+        left: 120px;
+        top: -10px;
+      }
     }
   }
 
@@ -74,13 +96,15 @@
 }
 
 .program-details__text--leaf {
-  padding: 14px 15px;
-
   &::before {
     content: "";
     background-image: url("../../images/icons/icon-leaf.svg");
     background-color: #68b738;
     background-repeat: no-repeat;
+    min-width: 60px;
+    min-height: 60px;
+    background-position: center;
+    background-size: 27px;
   }
 
   @media (min-width: $width-tablet) {
@@ -90,8 +114,16 @@
 }
 
 .program-details__text--instant {
-  background-color: #68b738;
-  padding: 14px 15px;
+  &::before {
+    content: "";
+    background-image: url("../../images/icons/icon-instant.svg");
+    background-color: #68b738;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    background-position: center;
+    background-size: 27px;
+  }
 
   @media (min-width: $width-tablet) {
     width: 80px;
@@ -100,8 +132,16 @@
 }
 
 .program-details__text--eat {
-  background-color: #68b738;
-  padding: 14px 15px;
+  &::before {
+    content: "";
+    background-image: url("../../images/icons/icon-eat.svg");
+    background-color: #68b738;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    background-position: center;
+    background-size: 27px;
+  }
 
   @media (min-width: $width-tablet) {
     width: 80px;
@@ -110,8 +150,16 @@
 }
 
 .program-details__text--watch {
-  background-color: #68b738;
-  padding: 14px 15px;
+  &::before {
+    content: "";
+    background-image: url("../../images/icons/icon-watch.svg");
+    background-color: #68b738;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    background-position: center;
+    background-size: 27px;
+  }
 
   @media (min-width: $width-tablet) {
     width: 80px;
