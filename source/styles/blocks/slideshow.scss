@@ -2,63 +2,30 @@
   display: block;
   position: relative;
   width: 280px;
-  height: 270px;
-  padding: 15px 20px 27px;
+  height: 263px;
+  padding: 8px 20px 33px;
   margin: 0 auto;
 
-  &::before {
-    content: "";
-    display: flex;
-    width: 36px;
-    height: 36px;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    left: -18px;
-    top: 39%;
-    background: #ffffff;
-    stroke-width: 2px;
-    border-radius: 50%;
-    border: 2px solid #666666;
-    left: 50%;
-    transform: translateX(-48%);
-    z-index: 1;
-
-    @media (min-width: $width-tablet) {
-      top: 78%;
-      left: 48%;
-      transform: translateX(-46%);
+  @media (min-width: $width-tablet) {
+      left: 2%;
+      transform: translateY(-4%);
+      height: 512px;
+      width: 592px;
     }
-  }
-
-  &::after {
-    content: "";
-    display: flex;
-    width: 4px;
-    height: 256px;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    border-radius: 2px;
-    background: #666666;
-    left: 49%;
-    z-index: 0;
 
     @media (min-width: $width-tablet) {
       height: 512px;
-      left: 48%;
+      width: 592px;
+      margin: 0 auto;
+    }
+
+    @media (min-width: $width-desktop) {
+      position: absolute;
+      right: -660px;
+      top: 86px;
     }
   }
 
-  &:hover {
-    color: #68b738;
-  }
-
-  @media (min-width: $width-tablet) {
-    width: 592px;
-    margin: 0 auto;
-  }
-}
 
 .slideshow__arrow {
   background: url("/images/icons/two-arrows.svg#two-arrows");
@@ -69,16 +36,49 @@
   height: 18px;
   display: block;
   bottom: 53%;
-  left: 47%;
+  left: -74%;
+  transform: translateY(759%);
   z-index: 1;
+
+    @media (min-width: $width-tablet) {
+      left: -13%;
+      transform: translateY(-1178%);
+    }
+
+    @media (min-width: $width-desktop) {
+      left: -89%;
+      transform: translateY(318%);
+    }
+
+  &:hover path {
+    fill: #68b738;
+  }
 }
 
 .slideshow__slide--cat-max {
   display: block;
   position: absolute;
+  clip: rect(0, 138px, 254px, 0);
+
+  @media (min-width: $width-desktop) {
+    clip: rect(0, 280px, 512px, 0);
+    }
+
+  @media (min-width: $width-tablet) {
+    clip: rect(0, 280px, 512px, 0);
+  }
 }
 
 .slideshow__slide--cat-min {
   display: block;
   position: absolute;
-}
+  clip: rect(0, 274px, 256px, 140px);
+
+  @media (min-width: $width-desktop) {
+    clip: rect(0, 512px, 512px, 280px);
+    }
+
+  @media (min-width: $width-tablet) {
+    clip: rect(0, 512px, 512px, 280px);
+    }
+  }

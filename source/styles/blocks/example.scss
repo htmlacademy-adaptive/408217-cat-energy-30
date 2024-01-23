@@ -2,7 +2,16 @@
   background-color: #eaeaea;
 
   @media (min-width: $width-tablet) {
-    min-height: 1112px;
+    min-height: 1081px;
+    background-image: linear-gradient(to top,#ebebeb 462px,#fff 462px);
+    border-top: 2px solid #e6e6e6;
+  }
+
+  @media (min-width: $width-desktop) {
+    min-height: 462px;
+    background-image: linear-gradient(to top,#ebebeb 415px,#fff 415px);
+    position: relative;
+    border: 0;
   }
 }
 
@@ -11,7 +20,7 @@
   max-width: 1220px;
 
   @media (min-width: $width-tablet) {
-    padding: 0 20px;
+    padding: 0 30px;
     margin-bottom: 80px;
     display: grid;
     grid-template-columns: 366px 1fr;
@@ -21,9 +30,9 @@
   }
 
   @media (min-width: $width-desktop) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
   }
 }
 
@@ -33,11 +42,15 @@
   gap: 32px;
   padding: 6px 0 0 0;
 
-  @media (min-width: $width-desktop) {
+  @media (min-width: $width-tablet) {
     display: grid;
-    grid-template-columns: 124px 124px;
-    gap: 32px;
-    padding: 6px 0 0;
+    grid-template-columns: 162px 162px;
+    gap: 43px;
+    padding: 0;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding: 17px 0 0;
     grid-column: 1/1;
   }
 }
@@ -55,6 +68,11 @@
     line-height: 60px;
     grid-column: 1/-1;
     margin-bottom: 33px;
+    margin-top: 20px;
+  }
+
+  @media (min-width: $width-tablet) {
+    margin-top: 47px;
   }
 }
 
@@ -68,9 +86,10 @@
 
   @media (min-width: $width-desktop) {
     grid-column: 1/1;
-    margin-bottom: 54px;
     font-size: 16px;
     line-height: 24px;
+    width: 432px;
+    margin-top: 100px;
   }
 }
 
@@ -81,6 +100,7 @@
   text-align: center;
   padding-top: 14px;
   row-gap: 8px;
+  margin-bottom: 32px;
 }
 
 .example__weight-title {
@@ -97,6 +117,10 @@
     font-size: 30px;
     line-height: 37px;
   }
+
+  @media (min-width: $width-tablet) {
+    width: 162px;
+  }
 }
 
 .example__weight-description {
@@ -108,11 +132,19 @@
   line-height: 100%;
   background: #eaeaea;
   position: relative;
-  width: 77px;
+  width: 59px;
   text-transform: lowercase;
   word-break: break-word;
-  padding: 8px 25px 0px 22px;
-  margin: 0;
+  padding: 8px 25px 0 31px;
+  margin-bottom: -13px;
+
+  @media (min-width: $width-tablet) {
+    background: #ffffff;
+    font-size: 14px;
+    width: 125px;
+    padding: 12px 6px 0 17px;
+    margin: 0;
+  }
 }
 
 .example__result {
@@ -123,7 +155,7 @@
   text-transform: uppercase;
   justify-content: center;
   padding-bottom: 12px;
-  gap: 5px;
+  gap: 4px;
 
   @media (min-width: $width-tablet) {
     display: flex;
@@ -136,13 +168,19 @@
     flex-direction: column;
     align-items: flex-end;
     gap: 10px;
-    padding-right: 23px;
+    margin: -6px 1px 0 0;
+  }
+
+  @media (min-width: $width-desktop) {
+    gap: 66px;
+    margin-top: 20px;
+    flex-direction: row;
   }
 }
 
 .example__button {
-  bottom: 50%;
-  left: 45%;
+  bottom: 97%;
+  left: 48%;
   background: 0 0;
   position: absolute;
   background: transparent;
@@ -152,7 +190,66 @@
     left: 46%;
   }
 
-  &:hover path {
-    fill: #68b738;
+    @media (min-width: $width-desktop) {
+      height: 512px;
+      left: 47%;
   }
-}
+
+    &::before {
+      content: "";
+      display: flex;
+      width: 36px;
+      height: 36px;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      left: -18px;
+      top: 39%;
+      background: #ffffff;
+      stroke-width: 2px;
+      border-radius: 50%;
+      border: 2px solid #666666;
+      left: -158%;
+      transform: translateY(277%);
+      z-index: 1;
+
+        @media (min-width: $width-tablet) {
+          left: -105%;
+          transform: translateY(-611%);
+          }
+
+        @media (min-width: $width-desktop) {
+            left: -180%;
+            transform: translateY(178%);
+          }
+          &:hover {
+            border: #68b738;
+          }
+        }
+
+      &::after {
+        content: "";
+        display: flex;
+        width: 4px;
+        height: 256px;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        border-radius: 2px;
+        background: #666666;
+        left: 49%;
+        z-index: 0;
+
+          @media (min-width: $width-tablet) {
+            transform: translateY(-93%);
+            height: 512px;
+            left: 103%;
+          }
+
+          @media (min-width: $width-desktop) {
+            transform: translateY(-43%);
+            height: 512px;
+            left: 32%;
+          }
+      }
+  }

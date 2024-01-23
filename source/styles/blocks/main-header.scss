@@ -1,7 +1,4 @@
 .main-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   padding: 11px 20px;
   margin: 0 auto;
   max-width: 1220px;
@@ -26,7 +23,6 @@
 }
 
 .main-header__logo {
-  display: flex;
 }
 
 .main-header__logotype {
@@ -59,9 +55,13 @@
 }
 
 .main-header__text {
+
+  @media (min-width: $width-tablet) {
+    margin-top: -4px;
+  }
+
   @media (min-width: $width-desktop) {
     width: 118px;
     height: 21px;
-    padding-bottom: 5px;
   }
 }
