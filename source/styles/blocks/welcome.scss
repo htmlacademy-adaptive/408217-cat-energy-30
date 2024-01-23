@@ -3,17 +3,28 @@
 }
 
 .welcome__wrapper {
-  padding: 26px 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  max-width: 1440px;
+  padding: 27px 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  background: #ffffff;
 
   @media (min-width: $width-tablet) {
-    padding: 59px 40px;
-    grid-template-columns: 175px 175px;
+    display: flex;
     justify-content: space-between;
-    display: grid;
+    padding: 61px 70px;
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+}
+
+.welcome__wrapper-catalog {
+  padding: 47px 20px 10px;
+  background: #f2f2f2;
+  background-image: linear-gradient(to bottom,#ffffff 36px,#f2f2f2 38px);
+
+  @media (min-width: $width-tablet) {
+    padding: 62px 70px 60px;
+    background-image: linear-gradient(to bottom,#ffffff 42px,#f2f2f2 42px);
   }
 }
 
@@ -23,4 +34,30 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: $width-tablet) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+.welcome__address {
+  font-size: 14px;
+  line-height: 20px;
+
+  @media (min-width: $width-tablet) {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+  }
+}
+
+.welcome__map iframe {
+  display: block;
+  width: 100%;
+  border: 0;
+
+  @media (min-width: $width-tablet) {
+    height: 400px;
+  }
 }

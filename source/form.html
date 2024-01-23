@@ -16,22 +16,18 @@
       <div class="main-header__logo">
       <a class="main-header__logotype" href="index.html">
         <picture>
-          <source type="image/svg+xml" media="(min-width: 1200px)" srcset="../../images/icons/logo.svg">
-          <source type="image/svg+xml" media="(min-width: 768px)" srcset="../../images/icons/logo-pic.svg">
+          <source type="image/svg+xml" media="(min-width: 1200px)" srcset="../../images/icons/logo.svg" width="70" height="59">
+          <source type="image/svg+xml" media="(min-width: 768px)" srcset="../../images/icons/logo-pic.svg" width="60" height="50">
           <img src="../../images/icons/logo-mobile.svg" width="33" height="38" alt="Кэт энерджи.">
         </picture>
-        <svg width="101" height="18">
+        <svg class="main-header__text" width="101" height="18">
           <use href="images/icons/stack.svg#logotype" x="0" y="0"></use>
         </svg>
       </a>
       </div>
-      <button class="main-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
-        <svg class="main-header__toggle-open" width="24" height="16">
-          <use href="images/icons/stack.svg#toggle-open" x="0" y="0"></use>
-        </svg>
-      </button>
       </header>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--nojs">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
               <li class="main-nav__item">
@@ -59,11 +55,11 @@
         <fieldset class="form__fieldset">
           <legend class="form__legend visually-hidden">Данные кота</legend>
         <div class="form__group">
-          <label class="form__label" for="name">Имя*</label>
+          <label class="form__label" for="name">Имя:*</label>
           <input class="form__control" type="text" id="name" name="name" value="Барсик" required>
         </div>
         <div class="form__group">
-          <label class="form__label" for="weight">Вес (кг)*</label>
+          <label class="form__label" for="weight">Вес (кг):*</label>
           <input class="form__control" type="number" id="weight" name="weight" value="7" required>
         </div>
         <div class="form__group">
@@ -74,56 +70,77 @@
         <fieldset class="form__fieldset form__fieldset--target">
           <legend class="form__legend visually-hidden">Цели</legend>
         <div class="form__group">
-          <input class="form__radio" type="radio" id="lose-weight" name="choice" value="Похудение" checked="checked">
-          <label class="form__radio-label" for="lose-weight">Похудение</label>
+          <label class="form__radio-label">
+          <input class="form__radio visually-hidden" type="radio" name="choice" value="Похудение" checked="checked">
+          <span class="form__radio-circle"></span>
+          <span class="form__radio-circle-text">Похудение</span>
+          </label>
         </div>
         <div class="form__group">
-          <input class="form__radio" type="radio" id="getting-fat" name="choice" value="Набор массы">
-          <label class="form__radio-label" for="getting-fat">Набор массы</label>
+          <label class="form__radio-label">
+          <input class="form__radio visually-hidden" type="radio" name="choice" value="Набор массы">
+          <span class="form__radio-circle"></span>
+          <span class="form__radio-circle-text">Набор массы</span>
+          </label>
         </div>
         <div class="form__group">
-          <input class="form__radio" type="radio" id="question" name="choice" value="Не знаю">
-          <label class="form__radio-label" for="question">Не знаю (нужен ваш совет)</label>
+          <label class="form__radio-label">
+          <input class="form__radio visually-hidden" type="radio" name="choice" value="Не знаю">
+          <span class="form__radio-circle"></span>
+          <span class="form__radio-circle-text">Не знаю (нужен ваш совет)</span>
+          </label>
         </div>
         </fieldset>
       </div>
 
       <fieldset class="form__fieldset">
         <legend class="form__legend">
-          <span class="form__legend form__legend--title">Контактные данные (владельца кота)</span>
+          <span class="form__legend form__legend-wrapper form__legend--title">Контактные данные<br> (владельца кота)</span>
         </legend>
-        <div class="form__group">
-          <label class="form__label form__label--email" for="email">E-mail*</label>
+        <div class="form__group form__group--email">
+          <label class="form__label" for="email">Mail:*</label>
           <input class="form__control" type="email" id="email" name="email" placeholder="кuklachev@gmail.com" required>
         </div>
-        <div class="form__group">
-          <label class="form__label form__label--tel" for="tel">Телефон*</label>
+        <div class="form__group form__group--tel">
+          <label class="form__label" for="tel">Телефон:*</label>
           <input class="form__control" type="tel" id="tel" name="tel" placeholder="8 (960) 900-60-90" required>
         </div>
       </fieldset>
 
       <fieldset class="form__fieldset">
-        <legend class="form__legend">Комментарий</legend>
-        <textarea class="form__control form__control--textarea" name="form-comment" id="form-comment" cols="10" rows="5"></textarea>
+        <legend class="form__legend form__legend-commit">Комментарий</legend>
+        <textarea class="form__control form__control--textarea" name="form-comment" id="form-comment" cols="30" rows="7" placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
 
       <fieldset class="form__fieldset">
-        <legend class="form__legend">Дополнительно</legend>
+        <legend class="form__legend form__legend-add">Дополнительно</legend>
         <div class="form__group">
-          <input class="form__checkbox" type="checkbox" id="addition" name="addition" value="Сахарозаменитель" checked="checked">
-          <label class="form__checkbox-label" for="addition">Сахарозаменитель</label>
+          <label class="form__checkbox-label">
+          <input class="form__checkbox visually-hidden" type="checkbox" name="addition" value="Сахарозаменитель" checked="checked">
+          <span class="form__group-square"></span>
+          <span class="form__group-square-text">Сахарозаменитель</span>
+          </label>
         </div>
         <div class="form__group">
-          <input class="form__checkbox" type="checkbox" id="water" name="water" value="Питьевая вода">
-          <label for="water">Питьевая вода</label>
+          <label class="form__checkbox-label">
+          <input class="form__checkbox visually-hidden" type="checkbox" name="water" value="Питьевая вода">
+          <span class="form__group-square"></span>
+          <span class="form__group-square-text">Питьевая вода</span>
+          </label>
         </div>
         <div class="form__group">
-          <input class="form__checkbox" type="checkbox" id="milk" name="milk" value="Молоко">
-          <label class="form__checkbox-label" for="milk">Молоко</label>
+          <label class="form__checkbox-label">
+          <input class="form__checkbox visually-hidden" type="checkbox" name="milk" value="Молоко">
+          <span class="form__group-square"></span>
+          <span class="form__group-square-text">Молоко</span>
+          </label>
         </div>
         <div class="form__group">
-          <input class="form__checkbox" type="checkbox" id="vitamins" name="vitamins" value="Витамины">
-          <label class="form__checkbox-label" for="vitamins">Витамины</label>
+          <label class="form__checkbox-label">
+          <input class="form__checkbox visually-hidden" type="checkbox" name="vitamins" value="Витамины">
+          <span class="form__group-square"></span>
+          <span class="form__group-square-text">Витамины</span>
+          </label>
         </div>
       </fieldset>
         <button class="form__button button" type="submit">Отправить заявку</button>
@@ -138,11 +155,9 @@
           <p class="welcome__title">Приглашаем к сотрудничеству дилеров!</p>
           <p class="welcome__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
-        <picture>
-          <source type="image/png" media="(min-width: 1200px)" srcset="images/map@1x.png 1x, images/map@2x.png 2x">
-          <source type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png, images/map-tablet@2x.png 2x">
-          <img class="welcome__map" src="images/map-mobile@1x.png" alt="Как проехать." width="320" height="362">
-        </picture>
+        <div class="welcome__map">
+          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa88e3c8ee34bbc74e85f70c7eb30a5b0a643686cc8f80dc9a7617f42eb5e33e6&amp;source=constructor" width="320" height="362"></iframe>
+        </div>
       </section>
       <div class="footer__wrapper">
         <a class="footer__logotype" href="index.html">

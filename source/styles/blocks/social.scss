@@ -3,16 +3,19 @@
   gap: 24px;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
-  padding: 20px 0;
+  padding: 24px 0;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
 
   @media (min-width: $width-tablet) {
-    border: none;
-    padding: 0;
+    border: 0;
+    padding: 2px 0 0 153px;
   }
 
   @media (min-width: $width-desktop) {
-    border: none;
-    padding: 0;
+    border: 0;
+    padding-left: 35px;
   }
 }
 
@@ -24,6 +27,9 @@
 .social__link--vk,
 .social__link--telegram {
   fill: #666666;
+  width: 28px;
+  display: block;
+  height: 22px;
 
   &:hover {
     fill: #68b738;

@@ -1,16 +1,17 @@
 .gift {
+  width: 279px;
+  height: 289px;
+  margin: 0 auto;
   background-image:
     linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
     image-set(
     url("/images/backpack-mobile@1x.png") type("image/png") 1x,
     url("/images/backpack-mobile@2x.png") type("image/png") 2x
     );
-  min-width: 280px;
-  min-height: 290px;
   position: relative;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #4f4e53;
+  background-color: #ffffff;
 
   &::before {
     content: url("/images/icons/icon-gift.svg#icon-gift");
@@ -18,6 +19,33 @@
     left: 50%;
     transform: translateX(-50%);
     top: 56px;
+
+    @media (min-width: $width-tablet) {
+      left: 117px;
+      top: 56px;
+    }
+  }
+
+  @media (min-width: $width-tablet) {
+    background-image:
+    linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+    image-set(
+    url("/images/backpack-tablet@1x.png") type("image/png") 1x,
+    url("/images/backpack-tablet@2x.png") type("image/png") 2x
+    );
+    width: 707px;
+    height: 200px;
+    margin: 0 auto;
+    border: 0;
+    box-shadow: none;
+  }
+
+  &::before {
+    content: url(/images/icons/icon-gift.svg#icon-gift);
+    position: absolute;
+    left: 139px;
+    transform: translateX(-50%);
+    top: 58px;
   }
 }
 
@@ -26,5 +54,10 @@
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  padding: 187px 60px 43px;
+  padding: 187px 60px 43px 57px;
+
+  @media (min-width: $width-tablet) {
+    padding: 71px 125px 69px 421px;
+    text-align: left;
+  }
 }

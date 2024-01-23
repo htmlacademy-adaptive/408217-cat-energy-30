@@ -5,22 +5,30 @@
 }
 
 .footer__wrapper {
-  @include base-wrapper;
-  display: flex;
-  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
   padding: 40px 20px;
-  max-width: 1220px;
+  display: flex;
 
-  @media (max-width: $width-tablet) {
+  @media (min-width: $width-tablet) {
+    display: flex;
+    min-width: 708px;
+    height: 37px;
+    justify-content: space-between;
     align-items: center;
-    flex-direction: column;
     padding: 55px 30px;
+    flex-direction: row;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding: 66px 110px;
+    max-width: 1220px;
+    margin: 0 auto;
   }
 }
 
 .footer__academy {
-  display: flex;
-  width: 168px;
+
 }
 
 .footer__academy-logo {
@@ -41,6 +49,19 @@
   width: 280px;
   font-size: 16px;
   line-height: 20px;
+
+  @media (min-width: $width-tablet) {
+    justify-content: right;
+  }
+
+  @media (min-width: $width-desktop) {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: center;
+    text-align: center;
+    width: 164px;
+  }
 
   &:hover {
     fill: #68b738;

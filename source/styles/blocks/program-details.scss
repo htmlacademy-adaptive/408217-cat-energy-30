@@ -1,16 +1,38 @@
+.program-details {
+  @media (min-width: $width-tablet) {
+    margin-top: 26px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-top: 50px;
+  }
+}
+
 .program-details__wrapper {
   @include base-wrapper;
   padding: 0 20px;
   max-width: 1220px;
+
+  @media (min-width: $width-tablet) {
+    margin: 0 auto;
+    padding: 0 30px;
+    max-width: 1220px;
+  }
 }
 
 .program-details__title {
-  color: #000000;
-  font-family: "Oswald", sans-serif;
+  color: #000;
+  font-family: "Oswald",sans-serif;
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
-  padding-bottom: 12px;
+  padding-bottom: 42px;
+  margin: 1px;
+
+  @media (min-width: $width-tablet) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 
   @media (min-width: $width-desktop) {
     font-size: 60px;
@@ -24,6 +46,8 @@
   flex-direction: column;
   gap: 20px;
   padding-bottom: 17px;
+  counter-reset: item;
+  margin-top: -2px;
 
   @media (min-width: $width-tablet) {
     display: grid;
@@ -31,25 +55,44 @@
     grid-gap: 31px 60px;
     font-size: 16px;
     line-height: 24px;
+    margin-bottom: 13px;
   }
 
   @media (min-width: $width-desktop) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 60px 80px;
+    gap: 60px 63px;
   }
 }
 
 .program-details__text {
-  display: grid;
-  grid-template-columns: 60px 1fr;
-  gap: 20px;
+  position: relative;
+  padding-left: 80px;
+  min-height: 60px;
 
   @media (min-width: $width-tablet) {
-    grid-template-rows: 80px 1fr;
-    row-gap: 31px;
+    display: flex;
+    align-items: center;
     min-height: 286px;
-    padding-right: 79px;
+    padding: 0;
     position: relative;
+
+    &::after {
+      position: absolute;
+      z-index: -1;
+      counter-increment: item;
+      content: counter(item);
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 280px;
+      line-height: 1;
+      text-align: right;
+      color: #f2f2f2;
+
+      @media (min-width: $width-tablet) {
+        left: 115px;
+        top: -10px;
+        right: auto;
+      }
+    }
   }
 
   @media (min-width: $width-desktop) {
@@ -58,58 +101,100 @@
   }
 }
 
-@media (min-width: 768px) {
-  .program-details__text::after {
-    position: absolute;
-    z-index: -1;
-    top: -37px;
-    right: 79px;
-    counter-increment: item;
-    content: counter(item);
-    font-family: "Oswald", "Arial", sans-serif;
-    font-size: 280px;
-    line-height: 1;
-    text-align: right;
-    color: #f2f2f2;
+
+.program-details__text-description {
+  margin-top: 68px;
+  width: 262px;
+
+  @media (min-width: $width-desktop) {
+    margin-top: 117px;
   }
 }
 
 .program-details__text--leaf {
-  background-color: #68b738;
-  padding: 14px 15px;
+  &::before {
+    content: "";
+    background-image: url("../../images/icons/icon-leaf.svg");
+    background-color: #68b738;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    background-position: center;
+    background-size: 27px;
+    position: absolute;
+    top: 0;
+    left: 0;
 
-  @media (min-width: $width-tablet) {
-    width: 80px;
-    height: 80px;
+    @media (min-width: $width-tablet) {
+      width: 80px;
+      height: 80px;
+      top: 30px;
+    }
   }
 }
 
 .program-details__text--instant {
-  background-color: #68b738;
-  padding: 14px 15px;
+  &::before {
+    content: "";
+    background-image: url("../../images/icons/icon-instant.svg");
+    background-color: #68b738;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    background-position: center;
+    background-size: 27px;
+    position: absolute;
+    top: 0;
+    left: 0;
 
-  @media (min-width: $width-tablet) {
-    width: 80px;
-    height: 80px;
+    @media (min-width: $width-tablet) {
+      width: 80px;
+      height: 80px;
+      top: 30px;
+    }
   }
 }
 
 .program-details__text--eat {
-  background-color: #68b738;
-  padding: 14px 15px;
+  &::before {
+    content: "";
+    background-image: url("../../images/icons/icon-eat.svg");
+    background-color: #68b738;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    background-position: center;
+    background-size: 27px;
+    position: absolute;
+    top: 0;
+    left: 0;
 
-  @media (min-width: $width-tablet) {
-    width: 80px;
-    height: 80px;
+    @media (min-width: $width-tablet) {
+      width: 80px;
+      height: 80px;
+      top: 30px;
+    }
   }
 }
 
 .program-details__text--watch {
-  background-color: #68b738;
-  padding: 14px 15px;
+  &::before {
+    content: "";
+    background-image: url("../../images/icons/icon-watch.svg");
+    background-color: #68b738;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    background-position: center;
+    background-size: 27px;
+    position: absolute;
+    top: 0;
+    left: 0;
 
-  @media (min-width: $width-tablet) {
-    width: 80px;
-    height: 80px;
+    @media (min-width: $width-tablet) {
+      width: 80px;
+      height: 80px;
+      top: 30px;
+    }
   }
 }
