@@ -71,8 +71,8 @@
     margin-top: 20px;
   }
 
-  @media (min-width: $width-tablet) {
-    margin-top: 47px;
+  @media (min-width: $width-desktop) {
+
   }
 }
 
@@ -221,9 +221,6 @@
         @media (min-width: $width-desktop) {
             left: -180%;
             transform: translateY(178%);
-          }
-          &:hover {
-            border: #68b738;
           }
         }
 

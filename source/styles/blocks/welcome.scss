@@ -1,5 +1,6 @@
 .welcome {
   background-color: #ffffff;
+  position: relative;
 }
 
 .welcome__wrapper {
@@ -15,6 +16,15 @@
     max-width: 1220px;
     margin: 0 auto;
   }
+
+  @media (min-width: $width-desktop) {
+    position: absolute;
+    width: 486px;
+    top: 62px;
+    left: 110px;
+    margin: 0;
+    padding: 60px 40px;
+  }
 }
 
 .welcome__wrapper-catalog {
@@ -25,6 +35,19 @@
   @media (min-width: $width-tablet) {
     padding: 62px 70px 60px;
     background-image: linear-gradient(to bottom,#ffffff 42px,#f2f2f2 42px);
+  }
+}
+
+.welcome__wrapper-form {
+  padding: 11px 20px;
+  display: grid;
+  grid-template-columns: repeat(2,140px);
+  background: #f2f2f2;
+  margin-top: 31px;
+
+  @media (min-width: $width-tablet) {
+    margin-top: 60px;
+    padding: 41px 70px;
   }
 }
 

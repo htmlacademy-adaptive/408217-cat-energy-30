@@ -5,11 +5,11 @@
 
   @media (min-width: $width-tablet) {
     position: relative;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    column-gap: 95px;
+    display: flex;
     margin: 0 auto;
     padding: 25px 30px;
+    justify-content: space-between;
+    max-width: 1220px;
   }
 
   @media (min-width: $width-desktop) {

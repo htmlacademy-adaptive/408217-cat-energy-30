@@ -12,37 +12,37 @@
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page__body">
-    <header class="main-header">
-      <div class="main-header__logo">
-      <a class="main-header__logotype" href="index.html">
-        <picture>
-          <source type="image/svg+xml" media="(min-width: 1200px)" srcset="../../images/icons/logo.svg" width="70" height="59">
-          <source type="image/svg+xml" media="(min-width: 768px)" srcset="../../images/icons/logo-pic.svg" width="60" height="50">
-          <img src="../../images/icons/logo-mobile.svg" width="33" height="38" alt="Кэт энерджи.">
-        </picture>
-        <svg class="main-header__text" width="101" height="18">
-          <use href="images/icons/stack.svg#logotype" x="0" y="0"></use>
-        </svg>
-      </a>
-      </div>
+    <div class="header">
+      <header class="main-header">
+        <div class="main-header__logo">
+        <a class="main-header__logotype" href="index.html">
+          <picture>
+            <source type="image/svg+xml" media="(min-width: 1200px)" srcset="../../images/icons/logo.svg" width="70" height="59">
+            <source type="image/svg+xml" media="(min-width: 768px)" srcset="../../images/icons/logo-pic.svg" width="60" height="50">
+            <img src="../../images/icons/logo-mobile.svg" width="33" height="38" alt="Кэт энерджи.">
+          </picture>
+          <svg class="main-header__text" width="101" height="18">
+            <use href="images/icons/stack.svg#logotype" x="0" y="0"></use>
+          </svg>
+        </a>
+        </div>
+        <nav class="main-nav main-nav--nojs">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__list">
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="index.html">Главная</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link main-nav__link--current" href="#">Подбор программы</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
       </header>
-      <nav class="main-nav main-nav--nojs">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list">
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="index.html">Главная</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link main-nav__link--current" href="#">Подбор программы</a>
-              </li>
-            </ul>
-          </div>
-      </nav>
-    </header>
 
     <main class="main-container">
       <div class="form-text">
@@ -63,7 +63,7 @@
           <input class="form__control" type="number" id="weight" name="weight" value="7" required>
         </div>
         <div class="form__group">
-          <label class="form__label" for="age">Возраст (лет)</label>
+          <label class="form__label" for="age">Возраст (лет):</label>
           <input class="form__control" type="number" id="age" name="age" value="7" required>
         </div>
         </fieldset>
@@ -93,12 +93,12 @@
         </fieldset>
       </div>
 
-      <fieldset class="form__fieldset">
+      <fieldset class="form__fieldset form__fieldset-contact">
         <legend class="form__legend">
-          <span class="form__legend form__legend-wrapper form__legend--title">Контактные данные<br> (владельца кота)</span>
+          <span class="form__legend form__legend-wrapper form__legend--title">Контактные данные (владельца кота)</span>
         </legend>
         <div class="form__group form__group--email">
-          <label class="form__label" for="email">Mail:*</label>
+          <label class="form__label" for="email">E-Mail:*</label>
           <input class="form__control" type="email" id="email" name="email" placeholder="кuklachev@gmail.com" required>
         </div>
         <div class="form__group form__group--tel">
@@ -114,44 +114,48 @@
 
       <fieldset class="form__fieldset">
         <legend class="form__legend form__legend-add">Дополнительно</legend>
-        <div class="form__group">
-          <label class="form__checkbox-label">
-          <input class="form__checkbox visually-hidden" type="checkbox" name="addition" value="Сахарозаменитель" checked="checked">
-          <span class="form__group-square"></span>
-          <span class="form__group-square-text">Сахарозаменитель</span>
-          </label>
-        </div>
-        <div class="form__group">
-          <label class="form__checkbox-label">
-          <input class="form__checkbox visually-hidden" type="checkbox" name="water" value="Питьевая вода">
-          <span class="form__group-square"></span>
-          <span class="form__group-square-text">Питьевая вода</span>
-          </label>
-        </div>
-        <div class="form__group">
-          <label class="form__checkbox-label">
-          <input class="form__checkbox visually-hidden" type="checkbox" name="milk" value="Молоко">
-          <span class="form__group-square"></span>
-          <span class="form__group-square-text">Молоко</span>
-          </label>
-        </div>
-        <div class="form__group">
-          <label class="form__checkbox-label">
-          <input class="form__checkbox visually-hidden" type="checkbox" name="vitamins" value="Витамины">
-          <span class="form__group-square"></span>
-          <span class="form__group-square-text">Витамины</span>
-          </label>
-        </div>
+        <ul class="form__legend-list">
+          <li class="form__group">
+            <label class="form__checkbox-label">
+            <input class="form__checkbox visually-hidden" type="checkbox" name="addition" value="Сахарозаменитель" checked="checked">
+            <span class="form__group-square"></span>
+            <span class="form__group-square-text">Сахарозаменитель</span>
+            </label>
+          </li>
+          <li class="form__group">
+            <label class="form__checkbox-label">
+            <input class="form__checkbox visually-hidden" type="checkbox" name="water" value="Питьевая вода">
+            <span class="form__group-square"></span>
+            <span class="form__group-square-text">Питьевая вода</span>
+            </label>
+          </li>
+          <li class="form__group">
+            <label class="form__checkbox-label">
+            <input class="form__checkbox visually-hidden" type="checkbox" name="milk" value="Молоко">
+            <span class="form__group-square"></span>
+            <span class="form__group-square-text">Молоко</span>
+            </label>
+          </li>
+          <li class="form__group">
+            <label class="form__checkbox-label">
+            <input class="form__checkbox visually-hidden" type="checkbox" name="vitamins" value="Витамины">
+            <span class="form__group-square"></span>
+            <span class="form__group-square-text">Витамины</span>
+            </label>
+          </li>
+        </ul>
       </fieldset>
-        <button class="form__button button" type="submit">Отправить заявку</button>
-        <p class="form__button-info">* — Обязательные поля</p>
+        <div class="form__button-list">
+          <button class="form__button button" type="submit">Отправить заявку</button>
+          <p class="form__button-info">* — Обязательные поля</p>
+        </div>
       </form>
     </main>
 
     <footer class="footer">
       <section class="welcome">
         <h2 class="welcome__title visually-hidden">Приглашаем к сотрудничеству дилеров!</h2>
-        <div class="welcome__wrapper">
+        <div class="welcome__wrapper welcome__wrapper-form">
           <p class="welcome__title">Приглашаем к сотрудничеству дилеров!</p>
           <p class="welcome__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>

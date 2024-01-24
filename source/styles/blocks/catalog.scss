@@ -8,13 +8,15 @@
     padding-top: 35px;
     padding-left: 30px;
     margin: 0 auto;
+    border: 0;
   }
 
   @media (min-width: $width-desktop) {
     position: relative;
     border: 0;
-    margin-top: -12px;
-  }
+    margin: 0 auto;
+    padding: 16px 0;
+    }
   }
 
 .catalog__wrapper-title {
@@ -48,10 +50,11 @@
 
   @media (min-width: $width-desktop) {
     width: 1220px;
-    grid-template-columns: repeat(4, 245px);
+    grid-template-columns: repeat(4,245px);
     column-gap: 80px;
-    row-gap: 63px;
-    margin-top: 47px;
+    row-gap: 56px;
+    margin: 0;
+    padding: 75px 0;
   }
 }
 

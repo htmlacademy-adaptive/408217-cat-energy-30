@@ -1,6 +1,10 @@
 .form-text {
   @include base-wrapper;
   max-width: 1220px;
+
+  @media (min-width: $width-tablet) {
+    padding: 0 70px;
+  }
 }
 
 .form-text__description {
@@ -13,4 +17,11 @@
   width: 226px;
   margin: 0;
   margin-top: -3px;
+
+  @media (min-width: $width-tablet) {
+    font-size: 20px;
+    line-height: 30px;
+    width: 323px;
+    padding-top: 57px;
+  }
 }
