@@ -9,6 +9,8 @@
     <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/latoregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page__body">
@@ -241,9 +243,6 @@
               </li>
           <li class="catalog-card product-more__more">
             <div class="product-more">
-              <svg class="product-more__icon" width="128" height="24">
-                <use href="images/icons/stack.svg#plus-more" x="0" y="0"></use>
-              </svg>
               <p class="product-more__title">Показать еще 100500 товаров</p>
               <p class="product-more__description">На самом деле вкусов гораздо больше!</p>
               <a class="product-more__button" href="#">Показать все</a>
@@ -252,8 +251,10 @@
         </ul>
         </div>
 
+        <div class="card-addit__box">
         <div class="card-addit">
           <h2 class="card-addit__title">Дополнительные товары</h2>
+          <div class="card-addit__wrapper">
           <ul class="card-addit__list">
             <li class="card-addit__card">
               <h3 class="card-addit__name">Сахарозаменитель</h3>
@@ -288,23 +289,30 @@
               <a class="card-addit__card-button button" href="#">Заказать</a>
             </li>
           </ul>
+          </div>
         </div>
 
         <div class="gift">
           <p class="gift__offer-description">Закажите все<br> и получите чехол для<br> кота в подарок!</p>
         </div>
+      </div>
       </section>
     </main>
 
     <footer class="footer">
       <section class="welcome">
         <h2 class="welcome__title visually-hidden">Приглашаем к сотрудничеству дилеров!</h2>
-        <div class="welcome__wrapper welcome__wrapper-catalog">
+        <div class="welcome__wrapper">
           <p class="welcome__title">Приглашаем к сотрудничеству дилеров!</p>
-          <p class="welcome__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <p class="welcome__address"><span class="welcome__address-street">ул. Большая Конюшенная, д. 19/8</span> <span class="welcome__address-sity">Санкт-Петербург</span></p>
         </div>
         <div class="welcome__map">
-          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa88e3c8ee34bbc74e85f70c7eb30a5b0a643686cc8f80dc9a7617f42eb5e33e6&amp;source=constructor" width="320" height="362"></iframe>
+          <picture>
+            <source type="image/png" media="(min-width: 1200px)" srcset="images/map@1x.png 1x, images/map@2x.png 2x" width="1440" height="400">
+            <source type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x" width="768" height="400">
+            <img class="welcome__map-img" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Худой кот.">
+          </picture>
+          <iframe class="welcome__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa88e3c8ee34bbc74e85f70c7eb30a5b0a643686cc8f80dc9a7617f42eb5e33e6&amp;source=constructor" width="320" height="362"></iframe>
         </div>
       </section>
       <div class="footer__wrapper">

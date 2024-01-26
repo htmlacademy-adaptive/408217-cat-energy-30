@@ -1,3 +1,13 @@
+.catalog {
+  @media (min-width: $width-tablet) {
+    margin-bottom: 34px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-bottom: 102px;
+  }
+}
+
 .catalog__wrapper {
   max-width: 1220px;
   border-top: 1px solid #ebebeb;

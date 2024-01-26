@@ -5,26 +5,47 @@
   align-items: center;
   flex-direction: column;
   margin-top: 7px;
+  position: relative;
+
+  &::before {
+    content: url("/images/icons/plus-more.svg");
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    transform: translateX(-50%);
+    top: 0;
+    right: 39%;
+  }
 
   @media (min-width: $width-tablet) {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 170px;
-    padding: 70px 76px 123px 75px;
-    background-color: #fff;
+    padding: 96px 76px 123px 75px;
+    background-color: #ffffff;
     border: 2px solid #f2f2f2;
     margin-top: 80px;
-    height: 235px;
+
+    &::before {
+      content: url("/images/icons/plus-more.svg");
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      transform: translateX(-50%);
+      top: 52px;
+      right: 31%;
+    }
   }
 
   @media (min-width: $width-desktop) {
     display: flex;
-    padding: 50px 18px 40px;
+    padding: 84px 36px 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border: 2px solid #f2f2f2;
+    margin-left: -38px;
   }
 }
 
@@ -35,7 +56,7 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  padding-top: 7px;
+  padding-top: 36px;
 
   @media (min-width: $width-tablet) {
     font-size: 20px;
@@ -110,16 +131,21 @@
 
   @media (min-width: $width-desktop) {
     display: block;
-    margin: auto;
-    padding-bottom: 40px;
+    margin: 0;
+
     width: 60px;
     height: 60px;
+    padding: 0;
+    margin-top: -33px;
   }
 }
 
 .product-more__more {
   @media (min-width: $width-desktop) {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 38px 10px;
+    min-height: 450px;
     background-image: initial;
-    padding-top: 81px
   }
 }

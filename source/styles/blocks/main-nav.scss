@@ -1,15 +1,11 @@
 .main-nav {
-  @media (min-width: $width-tablet) {
-
-  }
-
   @media (min-width: $width-desktop) {
     background: transparent;
+    padding-left: 20px;
   }
 }
 
 .main-nav__wrapper {
-
   @media (min-width: $width-tablet) {
     display: flex;
     flex-wrap: wrap;
@@ -34,19 +30,20 @@
 .main-nav__list {
   @include list;
   margin: 0 -20px;
-  background-color: #fff;
 
   @media (min-width: $width-tablet) {
     display: flex;
     gap: 33px;
     flex-wrap: wrap;
-    justify-content: flex-end;
-    padding: 0;
-    margin: 0;
+    padding-right: 23px;
   }
 
   @media (min-width: $width-desktop) {
     max-width: 500px;
+    display: flex;
+    gap: 33px;
+    flex-wrap: wrap;
+    padding-right: 19px;
   }
 }
 
@@ -159,8 +156,7 @@
     border: 0;
     font-size: 18px;
     line-height: 24px;
-    margin-right: 4px;
-    margin-left: -3px;
+    margin-right: 1px;
   }
 
   @media (min-width: $width-desktop) {
@@ -180,19 +176,21 @@
 .main-nav__link-index {
   @media (min-width: $width-desktop) {
     color: #ffffff;
+  }
+}
 
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      height: 2px;
-      background-color: #ffffff;
-      left: 22px;
-      right: 22px;
-      left: 0;
-      right: 0;
-      top: 33px;
-    }
+.main-nav__link-index + .main-nav__link--current {
+  @media (min-width: $width-desktop) {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    background-color: #ffffff;
+    left: 22px;
+    right: 22px;
+    left: 0;
+    right: 0;
+    top: 30px;
   }
 }
 
@@ -211,18 +209,10 @@
     top: 30px;
   }
 
-  /*@media (min-width: $width-desktop) {
+  @media (min-width: $width-desktop) {
     content: "";
-    position: absolute;
-    bottom: 0;
-    height: 2px;
-    background-color: #ffffff;
-    left: 22px;
-    right: 22px;
-    left: 0;
-    right: 0;
-    top: 33px;
-  }*/
+    top: 34px;
+  }
 }
 
 .main-nav--opened .main-nav__wrapper {
