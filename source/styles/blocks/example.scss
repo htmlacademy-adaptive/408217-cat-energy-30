@@ -3,21 +3,25 @@
 
   @media (min-width: $width-tablet) {
     min-height: 1081px;
-    background-image: linear-gradient(to top,#ebebeb 462px,#fff 462px);
+    background-image: linear-gradient(to top,#ebebeb 462px,#ffffff 462px);
     border-top: 2px solid #e6e6e6;
   }
 
   @media (min-width: $width-desktop) {
     min-height: 462px;
-    background-image: linear-gradient(to top,#ebebeb 415px,#fff 415px);
     position: relative;
-    border: 0;
+    min-height: 462px;
+    background: linear-gradient(to bottom,#ffffff 179px,#ebebeb 179px,#ebebeb 100%);
+    border-top: none;
+    padding-top: 0;
+    padding-bottom: 15px;
   }
 }
 
 .example__wrapper {
   @include base-wrapper;
   max-width: 1220px;
+  position: relative;
 
   @media (min-width: $width-tablet) {
     padding: 0 30px;
@@ -33,6 +37,7 @@
     display: flex;
     flex-direction: column;
     align-items: baseline;
+    margin: 40px 0 32px 80px;
   }
 }
 
@@ -69,10 +74,6 @@
     grid-column: 1/-1;
     margin-bottom: 33px;
     margin-top: 20px;
-  }
-
-  @media (min-width: $width-tablet) {
-    margin-top: 47px;
   }
 }
 
@@ -116,10 +117,11 @@
   @media (min-width: $width-tablet) {
     font-size: 30px;
     line-height: 37px;
+    width: 162px;
   }
 
-  @media (min-width: $width-tablet) {
-    width: 162px;
+  @media (min-width: $width-desktop) {
+    margin-top: -2px;
   }
 }
 
@@ -144,6 +146,11 @@
     width: 125px;
     padding: 12px 6px 0 17px;
     margin: 0;
+    margin-bottom: -5px;
+  }
+
+  @media (min-width: $width-desktop) {
+    background: #ebebeb;
   }
 }
 
@@ -173,7 +180,7 @@
 
   @media (min-width: $width-desktop) {
     gap: 66px;
-    margin-top: 20px;
+    margin-top: 26px;
     flex-direction: row;
   }
 }
@@ -184,15 +191,17 @@
   background: 0 0;
   position: absolute;
   background: transparent;
+  border: 0;
 
   @media (min-width: $width-tablet) {
     bottom: 12%;
     left: 46%;
   }
 
-    @media (min-width: $width-desktop) {
-      height: 512px;
-      left: 47%;
+  @media (min-width: $width-desktop) {
+    height: 512px;
+    left: 47%;
+    top: 1%;
   }
 
     &::before {
@@ -220,10 +229,7 @@
 
         @media (min-width: $width-desktop) {
             left: -180%;
-            transform: translateY(178%);
-          }
-          &:hover {
-            border: #68b738;
+            transform: translateY(102%);
           }
         }
 
@@ -247,9 +253,26 @@
           }
 
           @media (min-width: $width-desktop) {
-            transform: translateY(-43%);
+            transform: translateY(-50%);
             height: 512px;
             left: 32%;
           }
       }
+  }
+  .example__button:hover::after {
+    background: #68b738;
+  }
+
+  .example__button:active::after {
+    background: #68b738;
+    opacity: 0.6;
+  }
+
+  .example__button:hover::before {
+    border-color: #68b738;
+  }
+
+  .example__button:active::before {
+    border-color: #68b738;
+    opacity: 0.6;
   }

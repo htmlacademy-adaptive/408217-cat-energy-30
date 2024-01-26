@@ -22,10 +22,9 @@
     @media (min-width: $width-desktop) {
       position: absolute;
       right: -660px;
-      top: 86px;
+      top: 58px;
     }
   }
-
 
 .slideshow__arrow {
   background: url("/images/icons/two-arrows.svg#two-arrows");
@@ -47,12 +46,17 @@
 
     @media (min-width: $width-desktop) {
       left: -89%;
-      transform: translateY(318%);
+      transform: translateY(156%);
     }
+}
 
-  &:hover path {
-    fill: #68b738;
-  }
+.slideshow__arrow:hover {
+  fill: #68b738;
+}
+
+.slideshow__arrow:active {
+  fill: #68b738;
+  opacity: 0.6;
 }
 
 .slideshow__slide--cat-max {

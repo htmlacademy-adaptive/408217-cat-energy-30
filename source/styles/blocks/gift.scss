@@ -38,14 +38,32 @@
     margin: 0 auto;
     border: 0;
     box-shadow: none;
+    margin-top: 51px;
   }
 
   &::before {
     content: url(/images/icons/icon-gift.svg#icon-gift);
     position: absolute;
-    left: 139px;
+    left: 117px;
     transform: translateX(-50%);
     top: 58px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 245px;
+    height: 288px;
+    position: absolute;
+    margin: 0 auto;
+    background-image: linear-gradient(rgba(104,183,56,.85),rgba(104,183,56,.85)),-webkit-image-set(url(/images/backpack-mobile@1x.png)type("image/png") 1x,url(/images/backpack-mobile@2x.png)type("image/png") 2x);
+    background-image: linear-gradient(rgba(104,183,56,.85),rgba(104,183,56,.85)),image-set(url(/images/backpack-mobile@1x.png)type("image/png") 1x,url(/images/backpack-mobile@2x.png)type("image/png") 2x);
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fff;
+    top: 103px;
+
+    &::before {
+      left: 123px;
   }
 }
 
@@ -57,7 +75,14 @@
   padding: 187px 60px 43px 57px;
 
   @media (min-width: $width-tablet) {
-    padding: 71px 125px 69px 421px;
+    padding: 55px 125px 69px 421px;
     text-align: left;
   }
+
+  @media (min-width: $width-desktop) {
+    padding: 169px 42px 43px;
+    text-align: center;
+    width: 161px;
+  }
+}
 }

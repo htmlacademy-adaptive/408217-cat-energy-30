@@ -7,8 +7,16 @@
   margin: 0;
   padding: 28px 0 40px;
 
+  @media (min-width: $width-tablet) {
+    font-size: 60px;
+    line-height: 60px;
+    padding: 36px 0 0;
+  }
+
   @media (min-width: $width-desktop) {
     font-size: 60px;
     line-height: 60px;
+    padding-top: 16px;
+    margin: 0;
   }
 }
