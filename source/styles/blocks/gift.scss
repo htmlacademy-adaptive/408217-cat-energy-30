@@ -5,8 +5,8 @@
   background-image:
     linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
     image-set(
-    url("/images/backpack-mobile@1x.png") type("image/png") 1x,
-    url("/images/backpack-mobile@2x.png") type("image/png") 2x
+    url("../../images/backpack-mobile@1x.png") type("image/png") 1x,
+    url("../../images/backpack-mobile@2x.png") type("image/png") 2x
     );
   position: relative;
   background-repeat: no-repeat;
@@ -14,7 +14,7 @@
   background-color: #ffffff;
 
   &::before {
-    content: url("/images/icons/icon-gift.svg#icon-gift");
+    content: url("../../images/icons/icon-gift.svg#icon-gift");
     position: absolute;
     transform: translateX(-50%);
     top: 56px;
@@ -25,8 +25,8 @@
     background-image:
     linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
     image-set(
-    url("/images/backpack-tablet@1x.png") type("image/png") 1x,
-    url("/images/backpack-tablet@2x.png") type("image/png") 2x
+    url("../../images/backpack-tablet@1x.png") type("image/png") 1x,
+    url("../../images/backpack-tablet@2x.png") type("image/png") 2x
     );
     width: 707px;
     height: 200px;
@@ -37,7 +37,7 @@
   }
 
   &::before {
-    content: url(/images/icons/icon-gift.svg#icon-gift);
+    content: url("../../images/icons/icon-gift.svg#icon-gift");
     position: absolute;
     left: 117px;
     transform: translateX(-50%);
@@ -49,8 +49,8 @@
     height: 288px;
     position: absolute;
     margin: 0 auto;
-    background-image: linear-gradient(rgba(104,183,56,.85),rgba(104,183,56,.85)),-webkit-image-set(url(/images/backpack-mobile@1x.png)type("image/png") 1x,url(/images/backpack-mobile@2x.png)type("image/png") 2x);
-    background-image: linear-gradient(rgba(104,183,56,.85),rgba(104,183,56,.85)),image-set(url(/images/backpack-mobile@1x.png)type("image/png") 1x,url(/images/backpack-mobile@2x.png)type("image/png") 2x);
+    background-image: linear-gradient(rgba(104,183,56,.85),rgba(104,183,56,.85)),-webkit-image-set(url("../../images/backpack-mobile@1x.png")type("image/png") 1x,url("../../images/backpack-mobile@2x.png")type("image/png") 2x);
+    background-image: linear-gradient(rgba(104,183,56,.85),rgba(104,183,56,.85)),image-set(url("../../images/backpack-mobile@1x.png")type("image/png") 1x,url("../../images/backpack-mobile@2x.png")type("image/png") 2x);
     position: relative;
     background-repeat: no-repeat;
     background-position: center;
