@@ -30,12 +30,14 @@
 .main-nav__list {
   @include list;
   margin: 0 -20px;
+  background-color: #ffffff;
 
   @media (min-width: $width-tablet) {
     display: flex;
     gap: 33px;
     flex-wrap: wrap;
     padding-right: 23px;
+    background-color: transparent;
   }
 
   @media (min-width: $width-desktop) {
@@ -44,6 +46,7 @@
     gap: 33px;
     flex-wrap: wrap;
     padding-right: 19px;
+    background-color: transparent;
   }
 }
 

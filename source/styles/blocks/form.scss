@@ -222,9 +222,10 @@
 
 .form__group--email {
   position: relative;
+  padding-bottom: 15px;
 
   @media (min-width: $width-tablet) {
-    margin-top: 42px;
+    margin-top: 56px;
   }
 
   @media (min-width: $width-desktop) {
@@ -246,6 +247,9 @@
       left: 95%;
       position: absolute;
     }
+  }
+  &:has(.form__control:focus)::after {
+    background-color: #68b738;
   }
 }
 
@@ -447,7 +451,7 @@
   text-align: center;
 
   @media (min-width: $width-tablet) {
-    padding: 30px 0 0 57px;
+    padding: 33px 0 0 57px;
     font-size: 16px;
     line-height: 16px;
   }

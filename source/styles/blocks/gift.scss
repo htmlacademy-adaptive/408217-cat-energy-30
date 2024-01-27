@@ -16,14 +16,9 @@
   &::before {
     content: url("/images/icons/icon-gift.svg#icon-gift");
     position: absolute;
-    left: 50%;
     transform: translateX(-50%);
     top: 56px;
-
-    @media (min-width: $width-tablet) {
-      left: 117px;
-      top: 56px;
-    }
+    left: 139px;
   }
 
   @media (min-width: $width-tablet) {
