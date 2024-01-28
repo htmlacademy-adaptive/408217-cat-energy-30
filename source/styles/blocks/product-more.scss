@@ -1,4 +1,4 @@
-.product-more {
+.product-more__more {
   display: flex;
   width: 280px;
   justify-content: center;
@@ -165,7 +165,7 @@
   }
 }
 
-.product-more__more {
+.product-more {
   @media (min-width: $width-desktop) {
     display: flex;
     flex-direction: column;
