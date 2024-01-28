@@ -17,6 +17,7 @@
       height: 512px;
       width: 592px;
       margin: 0 auto;
+      transform: translateY(-3%);
     }
 
     @media (min-width: $width-desktop) {
@@ -41,11 +42,12 @@
     @media (min-width: $width-tablet) {
       left: -2px;
       bottom: 348px;
+      top: -229px;
     }
 
     @media (min-width: $width-desktop) {
-      left: -7px;
-      bottom: 32px;
+      left: -8px;
+      top: 244px;
     }
 }
 

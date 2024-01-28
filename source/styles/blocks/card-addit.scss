@@ -1,7 +1,7 @@
 .card-addit {
   @include base-wrapper;
   padding-bottom: 17px;
-  margin-top: 33px;
+  margin: 17px auto 0;
   position: relative;
 
   &::before {
@@ -15,10 +15,28 @@
     z-index: 1;
   }
 
+  @media (min-width: $width-tablet) {
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+    &::before {
+      content: "";
+      height: 2px;
+      background-color: #68b738;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 51px;
+      z-index: 1;
+    }
+  }
+
   @media (min-width: $width-desktop) {
     margin: 0;
     padding: 0;
     position: relative;
+    margin: -12px 0 -17px;
 
     &::before {
       content: "";
@@ -34,14 +52,25 @@
 }
 
 .card-addit__container {
+  margin-top: -20px;
+
+  @media (min-width: $width-tablet) {
+  margin: -24px 0 0 28px;
+  }
+
   @media (min-width: $width-desktop) {
     width: 1220px;
     margin: 0 auto;
     display: flex;
+    margin-top: 30px;
   }
 }
 
 .card-addit__title-container {
+  @media (min-width: $width-tablet) {
+    margin: 40px 0 0 70px;
+  }
+
   @media (min-width: $width-desktop) {
     width: 1220px;
     margin: 0 auto;
@@ -77,6 +106,7 @@
 
   @media (min-width: $width-desktop) {
     width: 895px;
+    min-height: 291px;
   }
 }
 
@@ -116,7 +146,8 @@
   left: -20px;
 
   @media (min-width: $width-tablet) {
-    left: 0;
+    font-size: 36px;
+    line-height: 36px;
   }
 
   @media (min-width: $width-desktop) {
@@ -128,7 +159,7 @@
     display: inline-block;
     padding-left: 40px;
     padding-right: 40px;
-    margin-left: -40px;
+    margin-left: -20px;
     font-size: 36px;
     line-height: 36px;
   }
@@ -151,8 +182,8 @@
     margin: 0;
   }
 
-  @media (min-width: $width-tablet) {
-    margin-top: -11px;
+  @media (min-width: $width-desktop) {
+      padding: 0;
   }
 }
 
@@ -166,11 +197,10 @@
   }
 
   @media (min-width: $width-desktop) {
-    padding: 0;
-    padding-left: 125px;
+    margin: 0;
     display: flex;
-    gap: 112px;
-    margin-top: -12px;
+    margin-right: -95px;
+    margin-top: 3px;
   }
 }
 
