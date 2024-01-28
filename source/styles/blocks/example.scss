@@ -256,6 +256,12 @@
             height: 512px;
             left: 32%;
           }
+
+        &:hover {
+          svg {
+            fill:#68b738;
+          }
+        }
       }
   }
   .example__button:hover::after {

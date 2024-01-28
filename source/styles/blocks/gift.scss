@@ -1,6 +1,6 @@
 .gift {
   width: 279px;
-  height: 289px;
+  min-height: 289px;
   margin: 0 auto;
   background-image:
     linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
@@ -29,7 +29,7 @@
     url("../../images/backpack-tablet@2x.png") type("image/png") 2x
     );
     width: 707px;
-    height: 200px;
+    min-height: 200px;
     margin: 0 auto;
     border: 0;
     box-shadow: none;
@@ -55,7 +55,6 @@
     background-repeat: no-repeat;
     background-position: center;
     background-color: #fff;
-    top: 103px;
 
     &::before {
       left: 123px;
