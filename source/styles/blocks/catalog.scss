@@ -30,12 +30,13 @@
   }
 
 .catalog__wrapper-title {
-  font-family: "Oswald";
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   line-height: 36px;
   margin: 0;
   padding: 28px 20px 40px;
   font-weight: 400;
+  color: #000000;
 
   @media (min-width: $width-tablet) {
     font-size: 60px;

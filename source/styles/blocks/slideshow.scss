@@ -17,6 +17,7 @@
       height: 512px;
       width: 592px;
       margin: 0 auto;
+      transform: translateY(-3%);
     }
 
     @media (min-width: $width-desktop) {
@@ -27,26 +28,26 @@
   }
 
 .slideshow__arrow {
-  background: url("/images/icons/two-arrows.svg#two-arrows");
+  background: url("/images/icons/stack.svg#two-arrows");
   background-color: transparent;
   background-repeat: repeat;
   position: absolute;
   width: 24px;
   height: 18px;
   display: block;
-  bottom: 53%;
-  left: -74%;
-  transform: translateY(759%);
+  left: -6px;
+  top: 120px;
   z-index: 1;
 
     @media (min-width: $width-tablet) {
-      left: -13%;
-      transform: translateY(-1178%);
+      left: -2px;
+      bottom: 348px;
+      top: -229px;
     }
 
     @media (min-width: $width-desktop) {
-      left: -89%;
-      transform: translateY(156%);
+      left: -8px;
+      top: 244px;
     }
 }
 

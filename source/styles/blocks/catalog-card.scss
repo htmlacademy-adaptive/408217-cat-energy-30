@@ -37,13 +37,14 @@
   width: 76px;
   flex-direction: column;
   color: #222222;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   font-weight: 400;
   margin: 0;
   cursor: pointer;
+  text-decoration: none;
 
   @media (min-width: $width-tablet) {
     width: 135px;
@@ -94,6 +95,10 @@
   }
 }
 
+.catalog-card__link {
+  text-decoration: none;
+}
+
 .catalog-card__product-specifications {
   @include list;
   font-size: 12px;
@@ -136,7 +141,7 @@
   padding: 10px 0;
   color: #ffffff;
   text-align: center;
-  font-family: "Oswald",sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   grid-column: 1/3;

@@ -1,26 +1,79 @@
 .card-addit {
   @include base-wrapper;
-  max-width: 1220px;
   padding-bottom: 17px;
-  margin-top: 33px;
+  margin: 17px auto 0;
+  position: relative;
+
+  &::before {
+    content: "";
+    height: 2px;
+    background-color: #68b738;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 35px;
+    z-index: 1;
+  }
+
+  @media (min-width: $width-tablet) {
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+    &::before {
+      content: "";
+      height: 2px;
+      background-color: #68b738;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 51px;
+      z-index: 1;
+    }
+  }
 
   @media (min-width: $width-desktop) {
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    margin: -12px 0 -17px;
+
+    &::before {
+      content: "";
+      height: 2px;
+      background-color: #68b738;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 25px;
+      z-index: 1;
+    }
   }
 }
 
-.card-addit__box {
+.card-addit__container {
+  margin-top: -20px;
+
   @media (min-width: $width-tablet) {
-  display: flex;
-  max-width: 1220px;
-  margin: 0 auto;
-  flex-direction: column;
+  margin: -24px 0 0 28px;
   }
 
   @media (min-width: $width-desktop) {
-    flex-direction: row;
-    margin: 0;
-    position: relative;
+    width: 1220px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 30px;
+  }
+}
+
+.card-addit__title-container {
+  @media (min-width: $width-tablet) {
+    margin: 40px 0 0 70px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 1220px;
+    margin: 0 auto;
   }
 }
 
@@ -33,9 +86,9 @@
   }
 
   @media (min-width: $width-desktop) {
-    width: 866px;
+    width: 100%;
     margin: 0;
-    padding: 3px 90px;
+    padding: 0;
   }
 }
 
@@ -53,6 +106,7 @@
 
   @media (min-width: $width-desktop) {
     width: 895px;
+    min-height: 291px;
   }
 }
 
@@ -77,39 +131,43 @@
 }
 
 .card-addit__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   color: #000000;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
   padding-top: 3px;
   position: relative;
-
-  &::before {
-    content: "";
-    height: 4px;
-    background-color: #68b738;
-    position: absolute;
-    width: 100%;
-    margin-top: 22px;
-    z-index: -1;
-  }
+  background-color: #fff;
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  padding: 0 20px;
+  left: -20px;
 
   @media (min-width: $width-tablet) {
     font-size: 36px;
     line-height: 36px;
-    padding: 6px 41px;
   }
 
   @media (min-width: $width-desktop) {
-    margin-top: -18px;
-    margin-left: 49px;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: -20px;
+    font-size: 36px;
+    line-height: 36px;
   }
 }
 
 .card-addit__name {
   color: #222222;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -124,8 +182,8 @@
     margin: 0;
   }
 
-  @media (min-width: $width-tablet) {
-    margin-top: -11px;
+  @media (min-width: $width-desktop) {
+      padding: 0;
   }
 }
 
@@ -139,11 +197,10 @@
   }
 
   @media (min-width: $width-desktop) {
-    padding: 0;
-    padding-left: 125px;
+    margin: 0;
     display: flex;
-    gap: 112px;
-    margin-top: -12px;
+    margin-right: -95px;
+    margin-top: 3px;
   }
 }
 
@@ -154,7 +211,7 @@
   padding: 10px 0;
   color: #ffffff;
   text-align: center;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;

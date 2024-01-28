@@ -1,5 +1,7 @@
 .example {
   background-color: #eaeaea;
+  margin: 0 auto;
+  max-width: 1220px;
 
   @media (min-width: $width-tablet) {
     min-height: 1081px;
@@ -37,7 +39,7 @@
     display: flex;
     flex-direction: column;
     align-items: baseline;
-    margin: 40px 0 32px 80px;
+    margin: 40px 0 33px 80px;
   }
 }
 
@@ -62,7 +64,7 @@
 
 .example__title {
   color: #000000;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
@@ -106,7 +108,7 @@
 
 .example__weight-title {
   color: #000000;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 24px;
   position: relative;
@@ -228,8 +230,8 @@
           }
 
         @media (min-width: $width-desktop) {
-            left: -180%;
-            transform: translateY(102%);
+          left: -180%;
+          top: 473px;
           }
         }
 
@@ -257,6 +259,12 @@
             height: 512px;
             left: 32%;
           }
+
+        &:hover {
+          svg {
+            fill:#68b738;
+          }
+        }
       }
   }
   .example__button:hover::after {
