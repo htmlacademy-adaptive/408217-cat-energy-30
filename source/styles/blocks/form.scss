@@ -112,7 +112,18 @@
   }
 
   @media (min-width: $width-desktop) {
-    margin-top: 0;
+    margin: 0;
+
+    &::before {
+      content: "";
+      height: 2px;
+      background-color: #68b738;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: -15px;
+      z-index: 1;
+    }
   }
 }
 
@@ -137,7 +148,7 @@
   }
 
   @media (min-width: $width-desktop) {
-    margin-top: 0;
+    margin-top: 17px;
   }
 }
 
@@ -277,7 +288,8 @@
     height: 141px;
     padding: 16px 20px;
     width: 1180px;
-    margin: 77px 0 71px 107px;
+    margin: 0 auto;
+    margin: 78px auto 53px;
   }
 }
 
@@ -296,7 +308,7 @@
   @media (min-width: $width-desktop) {
     display: flex;
     justify-content: space-between;
-    margin: 0 40px 18px;
+    margin: 0 auto;
     width: 1220px;
     flex-direction: row;
   }
@@ -512,7 +524,7 @@
 }
 
 .form__button {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   width: 280px;
   height: 40px;
   padding: 10px 44px;
@@ -552,13 +564,14 @@
   @media (min-width: $width-desktop) {
     display: flex;
     width: 1220px;
-    margin: -39px 10px 0 110px;
+    margin: 0 auto;
+    margin-top: -40px;
   }
 }
 
 .form__button-info {
   color: #000000;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
   text-transform: none;
@@ -585,12 +598,18 @@
   width: 180px;
 
   @media (min-width: $width-tablet) {
-    width: auto;
+    width: 512px;
   }
 
   @media (min-width: $width-desktop) {
     width: 1300px;
     margin: 0 auto;
+    background-color: #fff;
+    position: relative;
+    display: inline-block;
+    padding: 0 40px;
+    left: 0;
+    z-index: auto;
   }
 }
 
@@ -609,7 +628,13 @@
   }
 
   @media (min-width: $width-desktop) {
+    width: 1300px;
+    margin: 0 auto;
+    background-color: #fff;
+    position: relative;
     display: inline-block;
-    width: 120px;
+    padding: 0 40px;
+    left: 0;
+    z-index: auto;
   }
 }
