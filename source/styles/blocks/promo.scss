@@ -71,7 +71,7 @@
   }
 
   @media (min-width: $width-desktop) {
-    font-family: Oswald;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 20px;
     line-height: 20px;
     text-align: left;
@@ -96,7 +96,7 @@
 
 .promo__link {
   color: #ffffff;
-  font-family: Oswald, "Arial", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   padding: 10px 0;

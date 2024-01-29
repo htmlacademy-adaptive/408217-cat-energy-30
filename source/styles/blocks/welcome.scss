@@ -27,6 +27,7 @@
     justify-content: space-between;
     z-index: 1;
     padding: 42px 80px;
+    left: calc(50% - 610px);
   }
 }
 
@@ -43,6 +44,7 @@
   @media (min-width: $width-desktop) {
     padding: 43px 80px 41px;
     background: #ffffff;
+    left: calc(50% - 610px);
   }
 }
 
@@ -80,6 +82,7 @@
     display: flex;
     justify-content: space-between;
     padding: 45px 80px 41px 81px;
+    left: calc(50% - 610px);
   }
 }
 
