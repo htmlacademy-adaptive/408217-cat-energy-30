@@ -33,7 +33,6 @@
   }
 
   @media (min-width: $width-desktop) {
-    margin: 0;
     padding: 0;
     position: relative;
     margin: -12px 0 -17px;
@@ -55,7 +54,7 @@
   margin-top: -20px;
 
   @media (min-width: $width-tablet) {
-  margin: -24px 0 0 0px;
+    margin: -24px 0 0 0;
   }
 
   @media (min-width: $width-desktop) {
@@ -79,8 +78,8 @@
 
 .card-additional__wrapper {
   @media (min-width: $width-tablet) {
-  width: 708px;
-  margin: 0 auto;
+    width: 708px;
+    margin: 0 auto;
   }
 
   @media (min-width: $width-desktop) {
@@ -134,10 +133,8 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
-  padding-top: 3px;
   position: relative;
   background-color: #ffffff;
-  position: relative;
   z-index: 2;
   display: inline-block;
   padding: 0 20px;
@@ -171,7 +168,7 @@
   line-height: 20px;
   text-transform: uppercase;
   font-weight: 400;
-  border-top: 1px solid #ebebeb;;
+  border-top: 1px solid #ebebeb;
   padding-top: 12px;
 
   @media (min-width: $width-tablet) {
@@ -182,7 +179,7 @@
   }
 
   @media (min-width: $width-desktop) {
-      padding: 0;
+    padding: 0;
   }
 }
 
@@ -206,7 +203,7 @@
 
   @media (min-width: $width-desktop) {
     width: 244px;
-    margin: 10px 0px;
+    margin: 10px 0;
   }
 }
 
@@ -225,7 +222,7 @@
 .card-additional__item {
   display: flex;
   justify-content: space-between;
-  padding: 0px 0px 17px 0px;
+  padding: 0 0 17px 0;
   margin: -30px 0 -1px;
 
   @media (min-width: $width-tablet) {

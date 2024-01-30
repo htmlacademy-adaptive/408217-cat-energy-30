@@ -69,6 +69,11 @@
   padding-left: 80px;
   min-height: 60px;
 
+  @media (min-width: $width-desktop) {
+    min-height: 240px;
+    padding-right: 0;
+  }
+
   @media (min-width: $width-tablet) {
     display: flex;
     align-items: center;
@@ -86,18 +91,8 @@
       line-height: 1;
       text-align: right;
       color: #f2f2f2;
-
-      @media (min-width: $width-tablet) {
-        left: 115px;
-        top: -10px;
-        right: auto;
-      }
+      left: 115px;
     }
-  }
-
-  @media (min-width: $width-desktop) {
-    min-height: 240px;
-    padding-right: 0;
   }
 }
 
@@ -106,7 +101,7 @@
   width: 262px;
 
   @media (min-width: $width-desktop) {
-    margin-top: 117px;
+    margin-top: 70px;
   }
 }
 
