@@ -7,25 +7,25 @@
   margin: 0 auto;
 
   @media (min-width: $width-tablet) {
-      left: 2%;
-      transform: translateY(-4%);
-      height: 512px;
-      width: 592px;
-    }
-
-    @media (min-width: $width-tablet) {
-      height: 512px;
-      width: 592px;
-      margin: 0 auto;
-      transform: translateY(-3%);
-    }
-
-    @media (min-width: $width-desktop) {
-      position: absolute;
-      right: -660px;
-      top: 58px;
-    }
+    left: 2%;
+    transform: translateY(-4%);
+    height: 512px;
+    width: 592px;
   }
+
+  @media (min-width: $width-tablet) {
+    height: 512px;
+    width: 592px;
+    margin: 0 auto;
+    transform: translateY(-3%);
+  }
+
+  @media (min-width: $width-desktop) {
+    position: absolute;
+    right: -660px;
+    top: 58px;
+  }
+}
 
 .slideshow__arrow {
   background: url("/images/icons/stack.svg#two-arrows");
@@ -39,16 +39,16 @@
   top: 120px;
   z-index: 1;
 
-    @media (min-width: $width-tablet) {
-      left: -2px;
-      bottom: 348px;
-      top: -229px;
-    }
+  @media (min-width: $width-tablet) {
+    left: -2px;
+    bottom: 348px;
+    top: -229px;
+  }
 
-    @media (min-width: $width-desktop) {
-      left: -7px;
-      top: 246px;
-    }
+  @media (min-width: $width-desktop) {
+    left: -7px;
+    top: 246px;
+  }
 }
 
 .slideshow__arrow:hover {
@@ -67,7 +67,7 @@
 
   @media (min-width: $width-desktop) {
     clip: rect(0, 280px, 512px, 0);
-    }
+  }
 
   @media (min-width: $width-tablet) {
     clip: rect(0, 280px, 512px, 0);
@@ -81,9 +81,9 @@
 
   @media (min-width: $width-desktop) {
     clip: rect(0, 512px, 512px, 280px);
-    }
+  }
 
   @media (min-width: $width-tablet) {
     clip: rect(0, 512px, 512px, 280px);
-    }
   }
+}

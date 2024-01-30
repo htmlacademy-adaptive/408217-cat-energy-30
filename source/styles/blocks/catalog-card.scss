@@ -1,7 +1,7 @@
 .catalog-card {
   padding: 21px 20px 14px;
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   position: relative;
 
   @media (min-width: $width-tablet) {
@@ -17,7 +17,7 @@
     flex-direction: column;
     padding: 8px 38px 10px;
     min-height: 200px;
-    background-image: linear-gradient(to bottom,#ffffff 89px,#f2f2f2 89px);
+    background-image: linear-gradient(to bottom, #ffffff 89px, #f2f2f2 89px);
   }
 
   &::before {
@@ -71,7 +71,7 @@
   margin-top: -55px;
 
   @media (min-width: $width-tablet) {
-    padding: 0px 37px 32px;
+    padding: 0 37px 32px;
     margin-top: -9px;
   }
 
@@ -84,7 +84,6 @@
 }
 
 .catalog-card__img {
-
   @media (min-width: $width-tablet) {
     text-align: center;
     margin-top: 10px;
@@ -121,14 +120,13 @@
 }
 
 .catalog-card__product-specifications-text {
-
   @media (min-width: $width-tablet) {
     font-size: 16px;
     line-height: 20px;
   }
 
   @media (min-width: $width-desktop) {
-    color: #444;
+    color: #444444;
     text-align: center;
     font-size: 16px;
     line-height: 20px;

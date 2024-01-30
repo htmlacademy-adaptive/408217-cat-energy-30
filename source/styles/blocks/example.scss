@@ -5,19 +5,19 @@
 
   @media (min-width: $width-tablet) {
     min-height: 1081px;
-    background-image: linear-gradient(to top,#ebebeb 462px,#ffffff 462px);
+    background-image: linear-gradient(to top, #ebebeb 462px, #ffffff 462px);
     border-top: 2px solid #e6e6e6;
   }
 
   @media (min-width: $width-desktop) {
     min-height: 462px;
     position: relative;
-    min-height: 462px;
-    background: linear-gradient(to bottom,#ffffff 179px,#ebebeb 179px,#ebebeb 100%);
+    background: linear-gradient(to bottom, #ffffff 179px, #ebebeb 179px, #ebebeb 100%);
     border-top: none;
     padding-top: 0;
     padding-bottom: 15px;
     min-width: 100%;
+    margin-top: -48px;
   }
 }
 
@@ -171,7 +171,6 @@
 
   @media (min-width: $width-tablet) {
     display: flex;
-    margin: 0;
     font-family: "Oswald", "Arial", sans-serif;
     line-height: 20px;
     text-transform: uppercase;
@@ -195,7 +194,6 @@
   left: 48%;
   background: 0 0;
   position: absolute;
-  background: transparent;
   border: 0;
 
   @media (min-width: $width-tablet) {
@@ -209,81 +207,81 @@
     top: 3px;
   }
 
-    &::before {
-      content: "";
-      display: flex;
-      width: 36px;
-      height: 36px;
-      justify-content: center;
-      align-items: center;
-      position: absolute;
-      left: -18px;
-      top: 39%;
-      background: #ffffff;
-      stroke-width: 2px;
-      border-radius: 50%;
-      border: 2px solid #666666;
-      left: -158%;
-      transform: translateY(277%);
-      z-index: 1;
+  &::before {
+    content: "";
+    display: flex;
+    width: 36px;
+    height: 36px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: -18px;
+    top: 39%;
+    background: #ffffff;
+    stroke-width: 2px;
+    border-radius: 50%;
+    border: 2px solid #666666;
+    transform: translateY(277%);
+    z-index: 1;
 
-        @media (min-width: $width-tablet) {
-          left: -10px;
-          top: -347px;
-          }
+    @media (min-width: $width-tablet) {
+      left: -10px;
+      top: -347px;
+    }
 
-        @media (min-width: $width-desktop) {
-          left: -14px;
-          top: 127px;
-          }
-        }
+    @media (min-width: $width-desktop) {
+      left: -14px;
+      top: 127px;
+    }
+  }
 
-      &::after {
-        content: "";
-        display: flex;
-        width: 4px;
-        height: 256px;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        border-radius: 2px;
-        background: #666666;
-        left: 49%;
-        z-index: 0;
+  &::after {
+    content: "";
+    display: flex;
+    width: 4px;
+    height: 256px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border-radius: 2px;
+    background: #666666;
+    left: 49%;
+    z-index: 0;
 
-          @media (min-width: $width-tablet) {
-            transform: translateY(-93%);
-            height: 512px;
-            left: 103%;
-          }
+    @media (min-width: $width-tablet) {
+      transform: translateY(-93%);
+      height: 512px;
+      left: 103%;
+    }
 
-          @media (min-width: $width-desktop) {
-            transform: translateY(-50%);
-            height: 512px;
-            left: 32%;
-          }
+    @media (min-width: $width-desktop) {
+      transform: translateY(-50%);
+      height: 512px;
+      left: 32%;
+    }
 
-        &:hover {
-          svg {
-            fill:#68b738;
-          }
-        }
+    &:hover {
+      svg {
+        fill: #68b738;
       }
+    }
   }
-  .example__button:hover::after {
-    background: #68b738;
-  }
+}
 
-  .example__button:active::after {
-    background: #68b738;
-    opacity: 0.6;
-  }
+.example__button:hover::after {
+  background: #68b738;
+}
 
-  .example__button:hover::before {
-    border-color: #68b738;
-  }
+.example__button:active::after {
+  background: #68b738;
+  opacity: 0.6;
+}
 
-  .example__button:active::before {
-    border-color: #68b738;
-    opacity: 0.6;
-  }
+.example__button:hover::before {
+  border-color: #68b738;
+}
+
+.example__button:active::before {
+  border-color: #68b738;
+  opacity: 0.6;
+}

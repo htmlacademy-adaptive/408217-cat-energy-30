@@ -28,15 +28,16 @@
   }
 
   @media (min-width: $width-desktop) {
-    display: -webkit-inline-box;
+    display: flex;
     gap: 80px;
+    flex-direction: row;
   }
 }
 
 .program__card {
   background: #f2f2f2;
   position: relative;
-  padding: 19px 0 0px 0px;
+  padding: 19px 0 0 0;
 
   @media (min-width: $width-tablet) {
     position: relative;
@@ -85,7 +86,6 @@
   position: relative;
 
   @media (min-width: $width-tablet) {
-    margin: 0;
     position: relative;
     font-size: 16px;
     line-height: 24px;
@@ -105,7 +105,7 @@
     height: 1px;
     background: #d9d9d9;
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
 
@@ -172,12 +172,12 @@
     }
   }
 
-    &:hover::after,
-    &:focus::after {
+  &:hover::after,
+  &:focus::after {
     background-position: right center;
   }
 
-    &:active::after {
+  &:active::after {
     opacity: 0.3;
   }
 }

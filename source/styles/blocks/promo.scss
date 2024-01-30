@@ -1,10 +1,10 @@
 .promo {
-    background-repeat: no-repeat;
-    background-position: center top;
-    color: #ffffff;
-    text-align: center;
-    background-size: auto 302px;
-    background-image: url("../../images/index-background-desktop-2@2x.jpg"), linear-gradient(#63a63b,#63a63b 302px,#fff 302px);
+  background-repeat: no-repeat;
+  background-position: center top;
+  color: #ffffff;
+  text-align: center;
+  background-size: auto 302px;
+  background-image: url("../../images/index-background-desktop-2@2x.jpg"), linear-gradient(#63a63b, #63a63b 302px, #ffffff 302px);
 
   @media (min-width: $width-tablet) {
     background-image: none;
