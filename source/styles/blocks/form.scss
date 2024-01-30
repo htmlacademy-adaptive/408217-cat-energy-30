@@ -127,7 +127,7 @@
   }
 }
 
-.form__fieldset-contactdop {
+.form__fieldset-contacts {
   margin: 26px 0 0 3px;
   padding: 0;
   position: relative;
@@ -239,7 +239,7 @@
   }
 
   @media (min-width: $width-desktop) {
-    background-color: #fff;
+    background-color: #ffffff;
     position: relative;
     z-index: 2;
     display: inline-block;
@@ -301,7 +301,7 @@
   padding: 34px 17px 11px 17px;
 
   @media (min-width: $width-tablet) {
-    padding: 20px 17px 38px;
+    padding: 20px 0px 38px;
     gap: 5px;
   }
 
@@ -320,6 +320,8 @@
 
   @media (min-width: $width-tablet) {
     margin-top: 56px;
+    width: 626px;
+    margin-left: 17px;
   }
 
   @media (min-width: $width-desktop) {
@@ -589,7 +591,7 @@
 }
 
 .form__fieldset-title {
-  background-color: #fff;
+  background-color: #ffffff;
   position: relative;
   z-index: 2;
   display: inline-block;
@@ -604,7 +606,7 @@
   @media (min-width: $width-desktop) {
     width: 1300px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: #ffffff;
     position: relative;
     display: inline-block;
     padding: 0 40px;
@@ -614,7 +616,7 @@
 }
 
 .form__fieldset-titledop {
-  background-color: #fff;
+  background-color: #ffffff;
   position: relative;
   z-index: 2;
   display: inline-block;
@@ -630,7 +632,7 @@
   @media (min-width: $width-desktop) {
     width: 1300px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: #ffffff;
     position: relative;
     display: inline-block;
     padding: 0 40px;
